@@ -1,0 +1,15 @@
+# Lab 4 
+
+
+## Pre-class activity
+Interesting twitter conversation between Prof Lisa Debruine and Dr Lisa Debruine on the importance of visualising data which you will be learning about in this lab 
+![](images/ggplot_thread.png)
+
+
+## In-class activity
+
+
+## Post-class activity
+
+
+## Additional resources 

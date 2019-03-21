@@ -1,0 +1,37 @@
+# Lab 1 
+
+In this lab we will be introduced to the skills we will develop over the next year and beyond. This lab will introduce Open Science and why it is relevant to your development as a Psychologist. We will meet our groups and the staff that will be leading our labs and who we will get to know well over these two semesters. We can't wait to get started!
+
+## Pre-class activity
+Watch this video of Dr Simine Vazire talking about Open Science and why it is an important concept for us to understand in Psychology. 
+[Intro to open science](https://www.youtube.com/watch?v=1rFWeTryiW4&feature=youtu.be)
+
+## In-class activity
+Replication task demonstrating variability in processing and reproducing instructions to highlight replicability debate and introduce dataset.
+
+Replication Task : In your groups please complete these steps on a bit of paper.
+* Draw a square
+* Draw another square at 15 degree angle to the bottom of the 1st square 
+* Draw 4 lines down from each corner of the 2nd square
+* Draw a circle next to 2nd square
+* Draw a smaller circle on top of first circle 
+* Draw upward line from side of 1st circle
+* Draw 2 triangles on top of 2nd circle
+
+Two examples of different interpretations of task:
+![Interpretation 1](images/Holly_rep.jpg)
+![Interpretation 2](images/Aliyah.jpg)
+
+
+
+Dataset is from Woodworth et al. (2018) details of which can be found here [Web-based Positive Psychology Interventions: A Reexamination of Effectiveness](https://openpsychologydata.metajnl.com/articles/10.5334/jopd.35/)
+
+## Post-class activity
+Formative task where the students have to develop a research question relative to the data and a plan of the steps needed to wrangle the data. RStudio has not been introduced to them yet but open science and replicability has. The aim of this exercise is for students to work with real data which is big and messy so they realise the importance of having an effective tool for handling data. 
+
+## Additional resources around open science and replicability
+[Is most published research wrong?](https://youtu.be/42QuXLucH3Q)
+
+[Replicability and Reproducibility Debate with Professor Dorothy Bishop](https://www.youtube.com/watch?v=UN8jgyXtz6A)
+
+[Why an Entire Field of Psychology Is in Trouble](https://youtu.be/2MDNvKXdLEM)
