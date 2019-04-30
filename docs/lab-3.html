@@ -5,27 +5,27 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chapter 3 Lab 3 | ug1-practical</title>
-  <meta name="description" content="Chapter 3 Lab 3 | ug1-practical-materials">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <title>ug1-practical</title>
+  <meta name="description" content="ug1-practical-materials">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
-  <meta property="og:title" content="Chapter 3 Lab 3 | ug1-practical" />
+  <meta property="og:title" content="ug1-practical" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="Chapter 3 Lab 3 | ug1-practical-materials" />
+  <meta property="og:description" content="ug1-practical-materials" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Lab 3 | ug1-practical" />
+  <meta name="twitter:title" content="ug1-practical" />
   
-  <meta name="twitter:description" content="Chapter 3 Lab 3 | ug1-practical-materials" />
+  <meta name="twitter:description" content="ug1-practical-materials" />
   
 
 <meta name="author" content="psyTeachR">
 
 
-<meta name="date" content="2019-03-21">
+<meta name="date" content="2019-04-30">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,7 +36,6 @@
 <link rel="next" href="lab-4.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
@@ -51,45 +50,71 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<link rel="stylesheet" href="include/psyteachr.css" type="text/css" />
-<link rel="stylesheet" href="include/style.css" type="text/css" />
+<link rel="stylesheet" href="include\psyteachr.css" type="text/css" />
+<link rel="stylesheet" href="include\style.css" type="text/css" />
 </head>
 
 <body>
@@ -105,9 +130,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><a href="./">ug-practical</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a><ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#the-overall-goal-for-our-students-in-our-year-1-psychology-labs"><i class="fa fa-check"></i><b>0.1</b> The overall goal for our students in our year 1 Psychology labs</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
 <li class="chapter" data-level="1" data-path="lab-1.html"><a href="lab-1.html"><i class="fa fa-check"></i><b>1</b> Lab 1</a><ul>
 <li class="chapter" data-level="1.1" data-path="lab-1.html"><a href="lab-1.html#pre-class-activity"><i class="fa fa-check"></i><b>1.1</b> Pre-class activity</a></li>
 <li class="chapter" data-level="1.2" data-path="lab-1.html"><a href="lab-1.html#in-class-activity"><i class="fa fa-check"></i><b>1.2</b> In-class activity</a></li>
@@ -132,6 +155,52 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4.2" data-path="lab-4.html"><a href="lab-4.html#in-class-activity-3"><i class="fa fa-check"></i><b>4.2</b> In-class activity</a></li>
 <li class="chapter" data-level="4.3" data-path="lab-4.html"><a href="lab-4.html#post-class-activity-1"><i class="fa fa-check"></i><b>4.3</b> Post-class activity</a></li>
 <li class="chapter" data-level="4.4" data-path="lab-4.html"><a href="lab-4.html#additional-resources"><i class="fa fa-check"></i><b>4.4</b> Additional resources</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="lab-5.html"><a href="lab-5.html"><i class="fa fa-check"></i><b>5</b> Lab 5</a><ul>
+<li class="chapter" data-level="5.1" data-path="lab-5.html"><a href="lab-5.html#pre-class-activity-4"><i class="fa fa-check"></i><b>5.1</b> Pre-class activity</a></li>
+<li class="chapter" data-level="5.2" data-path="lab-5.html"><a href="lab-5.html#wrangling-data"><i class="fa fa-check"></i><b>5.2</b> Wrangling Data</a></li>
+<li class="chapter" data-level="5.3" data-path="lab-5.html"><a href="lab-5.html#the-autism-quotient-aq"><i class="fa fa-check"></i><b>5.3</b> The Autism Quotient (AQ)</a></li>
+<li class="chapter" data-level="5.4" data-path="lab-5.html"><a href="lab-5.html#thinking-through-the-problem"><i class="fa fa-check"></i><b>5.4</b> Thinking through the problem</a></li>
+<li class="chapter" data-level="5.5" data-path="lab-5.html"><a href="lab-5.html#in-class-activity-4"><i class="fa fa-check"></i><b>5.5</b> In class activity</a></li>
+<li class="chapter" data-level="5.6" data-path="lab-5.html"><a href="lab-5.html#making-the-computer-do-the-dirty-work"><i class="fa fa-check"></i><b>5.6</b> Making the computer do the dirty work</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="lab-6.html"><a href="lab-6.html"><i class="fa fa-check"></i><b>6</b> Lab 6</a><ul>
+<li class="chapter" data-level="6.1" data-path="lab-6.html"><a href="lab-6.html#pre-class-activity-5"><i class="fa fa-check"></i><b>6.1</b> Pre-class activity</a></li>
+<li class="chapter" data-level="6.2" data-path="lab-6.html"><a href="lab-6.html#inclass-activity"><i class="fa fa-check"></i><b>6.2</b> Inclass activity</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="lab-6.html"><a href="lab-6.html#task-1---loading-in-the-package"><i class="fa fa-check"></i><b>6.2.1</b> Task 1 - loading in the package</a></li>
+<li class="chapter" data-level="6.2.2" data-path="lab-6.html"><a href="lab-6.html#task-2---read-in-data"><i class="fa fa-check"></i><b>6.2.2</b> Task 2 - read in data</a></li>
+<li class="chapter" data-level="6.2.3" data-path="lab-6.html"><a href="lab-6.html#task-3---getting-our-data-into-the-correct-format-for-analysis"><i class="fa fa-check"></i><b>6.2.3</b> Task 3 - getting our data into the correct format for analysis</a></li>
+<li class="chapter" data-level="6.2.4" data-path="lab-6.html"><a href="lab-6.html#task-4---question-format"><i class="fa fa-check"></i><b>6.2.4</b> Task 4 - Question format</a></li>
+<li class="chapter" data-level="6.2.5" data-path="lab-6.html"><a href="lab-6.html#task-5---scores"><i class="fa fa-check"></i><b>6.2.5</b> Task 5 - Scores</a></li>
+<li class="chapter" data-level="6.2.6" data-path="lab-6.html"><a href="lab-6.html#task-6---calculate-aq-scores"><i class="fa fa-check"></i><b>6.2.6</b> Task 6 - Calculate AQ scores</a></li>
+<li class="chapter" data-level="6.2.7" data-path="lab-6.html"><a href="lab-6.html#task-7---calculate-aq-scores-contd"><i class="fa fa-check"></i><b>6.2.7</b> Task 7 - Calculate AQ scores cont’d</a></li>
+<li class="chapter" data-level="6.2.8" data-path="lab-6.html"><a href="lab-6.html#task-8---calculate-aq-scores-efficiently"><i class="fa fa-check"></i><b>6.2.8</b> Task 8 - Calculate AQ scores efficiently</a></li>
+<li class="chapter" data-level="6.2.9" data-path="lab-6.html"><a href="lab-6.html#task-9---using-ggplot2-make-a-distribution-of-the-overall-aq-scores-by-producing-a-histogram-from-aq_scores."><i class="fa fa-check"></i><b>6.2.9</b> Task 9 - Using ggplot2, make a distribution of the overall AQ scores by producing a histogram from aq_scores.</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="lab-7.html"><a href="lab-7.html"><i class="fa fa-check"></i><b>7</b> Lab 7</a><ul>
+<li class="chapter" data-level="7.1" data-path="lab-7.html"><a href="lab-7.html#preclass-activity"><i class="fa fa-check"></i><b>7.1</b> Preclass activity</a></li>
+<li class="chapter" data-level="7.2" data-path="lab-7.html"><a href="lab-7.html#probability-and-probability-distributions"><i class="fa fa-check"></i><b>7.2</b> Probability and Probability Distributions</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="lab-7.html"><a href="lab-7.html#types-of-data"><i class="fa fa-check"></i><b>7.2.1</b> Types of data</a></li>
+<li class="chapter" data-level="7.2.2" data-path="lab-7.html"><a href="lab-7.html#simple-probability-calculations"><i class="fa fa-check"></i><b>7.2.2</b> Simple probability calculations</a></li>
+<li class="chapter" data-level="7.2.3" data-path="lab-7.html"><a href="lab-7.html#joint-probability"><i class="fa fa-check"></i><b>7.2.3</b> Joint probability</a></li>
+<li class="chapter" data-level="7.2.4" data-path="lab-7.html"><a href="lab-7.html#prep-exercise-estimate-the-probability-of-getting-x-heads-over-four-independent-flips."><i class="fa fa-check"></i><b>7.2.4</b> Prep exercise: Estimate the probability of getting X heads over four independent flips.</a></li>
+<li class="chapter" data-level="7.2.5" data-path="lab-7.html"><a href="lab-7.html#monte-carlo-simulation"><i class="fa fa-check"></i><b>7.2.5</b> Monte Carlo simulation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="lab-7.html"><a href="lab-7.html#theoretical-probability-distributions"><i class="fa fa-check"></i><b>7.3</b> Theoretical probability distributions</a></li>
+<li class="chapter" data-level="7.4" data-path="lab-7.html"><a href="lab-7.html#inclass-activity-1"><i class="fa fa-check"></i><b>7.4</b> Inclass activity</a></li>
+<li class="chapter" data-level="7.5" data-path="lab-7.html"><a href="lab-7.html#monte-carlo-simulations"><i class="fa fa-check"></i><b>7.5</b> Monte Carlo simulations</a></li>
+<li class="chapter" data-level="7.6" data-path="lab-7.html"><a href="lab-7.html#the-binomial-distribution---creating-a-discrete-distribution"><i class="fa fa-check"></i><b>7.6</b> The Binomial Distribution - Creating a Discrete Distribution</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="lab-8.html"><a href="lab-8.html"><i class="fa fa-check"></i><b>8</b> Lab 8</a><ul>
+<li class="chapter" data-level="8.1" data-path="lab-8.html"><a href="lab-8.html#pre-class-activity-6"><i class="fa fa-check"></i><b>8.1</b> Pre-class activity</a></li>
+<li class="chapter" data-level="8.2" data-path="lab-8.html"><a href="lab-8.html#discrete-or-continuous-datasets"><i class="fa fa-check"></i><b>8.2</b> Discrete or Continuous Datasets</a></li>
+<li class="chapter" data-level="8.3" data-path="lab-8.html"><a href="lab-8.html#normal-distribution"><i class="fa fa-check"></i><b>8.3</b> Normal distribution</a></li>
+<li class="chapter" data-level="8.4" data-path="lab-8.html"><a href="lab-8.html#inclass-activity-2"><i class="fa fa-check"></i><b>8.4</b> Inclass activity</a></li>
+<li class="chapter" data-level="8.5" data-path="lab-8.html"><a href="lab-8.html#normal-distribution-probability"><i class="fa fa-check"></i><b>8.5</b> Normal Distribution Probability</a></li>
+<li class="chapter" data-level="8.6" data-path="lab-8.html"><a href="lab-8.html#working-with-the-normal-distribution"><i class="fa fa-check"></i><b>8.6</b> Working with the Normal Distribution</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="lab-8.html"><a href="lab-8.html#qnorm---the-quartile-function"><i class="fa fa-check"></i><b>8.6.1</b> <strong><code>qnorm()</code></strong> - The Quartile Function</a></li>
+</ul></li>
 </ul></li>
 <li class="appendix"><span><b>Appendices</b></span></li>
 <li class="divider"></li>
@@ -160,21 +229,21 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="lab-3" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> Lab 3</h1>
-<p>In this lab we move on from reading data in and joining them together before selecting variables of interest to becoming familiar with the Wickham 6 and the functionality of tidyverse. Practice is an important part of PsyTeachR so in our level 1 program we ask students to repeat tasks over the labs and between in-class and assessments. This principle is carried over into the student's independent study practices as we encourage students to do prep independently but also come along to the practice sessions where space is open for students to work on lab tasks and assessments independently or discuss in groups but GTAs are present to guide and support if needed. This is an important part of our community building and creating a safe space to practice, make mistakes and develop skills.</p>
+<p>In this lab we move on from reading data in and joining them together before selecting variables of interest to becoming familiar with the Wickham 6 and the functionality of tidyverse. Practice is an important part of PsyTeachR so in our level 1 program we ask students to repeat tasks over the labs and between in-class and assessments. This principle is carried over into the student’s independent study practices as we encourage students to do prep independently but also come along to the practice sessions where space is open for students to work on lab tasks and assessments independently or discuss in groups but GTAs are present to guide and support if needed. This is an important part of our community building and creating a safe space to practice, make mistakes and develop skills.</p>
 <div id="pre-class-activity-2" class="section level2">
 <h2><span class="header-section-number">3.1</span> Pre-class activity</h2>
 <ul>
-<li>Watch Heather's video on intro to tidyverse</li>
+<li>Watch Heather’s video on intro to tidyverse</li>
 </ul>
 <div class="figure">
 <embed src="images/tidyverse.mp4" />
-<p class="caption">Heather's tidyverse video</p>
+<p class="caption">Heather’s tidyverse video</p>
 </div>
 <ul>
 <li>Work through the tidyverse book which talks you through the purpose of tidyverse using examples on a dataset called <code>babynames</code>. This package is installed on the lab computers but you can also <code>install.packages(&quot;babynames&quot;)</code> on your own personal computer if you want to prep for the lab outside the labs.</li>
 </ul>
 <p>Tidyverse (<a href="https://www.tidyverse.org/" class="uri">https://www.tidyverse.org/</a>) is a collection of R packages created by world-famous data scientist Hadley Wickham.</p>
-<p>Tidyverse contains six core packages: dplyr , tidyr , readr , purrr , ggplot2 , and tibble. If you've ever typed library(tidyverse) into R, you will have seen that it loads in all of these packages in one go. Within these six core packages, you should be able to find everything you need to analyse your data.</p>
+<p>Tidyverse contains six core packages: dplyr , tidyr , readr , purrr , ggplot2 , and tibble. If you’ve ever typed library(tidyverse) into R, you will have seen that it loads in all of these packages in one go. Within these six core packages, you should be able to find everything you need to analyse your data.</p>
 <p>In this lab, we are going to focus on the dplyr package, which contains six important functions:</p>
 <ul>
 <li>select() Include or exclude certain variables (columns)</li>
@@ -189,29 +258,31 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <ul>
 <li>RStudio is a tool that enables you to become confident and competent working with data</li>
 <li>This is essential as a psychologist as you need to know the data findings are based on are reliable and valid. Imagine delivering a treatment that was based on research where the analyst was not confident or competent?</li>
-<li>Think of a skill you nailed the first time you did it. Not so easy? You will learn to work with data by repeating these basic skills over and over. It's new and will take time. Give yourself credit for trying and don't stress if it doesn't work right away. Use the resources we give, that are being talked about online among the open science community and ask questions in class and on the forums.</li>
+<li>Think of a skill you nailed the first time you did it. Not so easy? You will learn to work with data by repeating these basic skills over and over. It’s new and will take time. Give yourself credit for trying and don’t stress if it doesn’t work right away. Use the resources we give, that are being talked about online among the open science community and ask questions in class and on the forums.</li>
 </ul>
 </div>
 <div id="in-class-activity-2" class="section level2">
 <h2><span class="header-section-number">3.2</span> In-class activity</h2>
-<p>OK, so what is our first step? Yup, thats right, we need to tell RStudio where to find all the files we need and pull them in ready for work. Let's go back to lab 2 and use our previous script to remember how to load the package, read in the data and join the 2 data files together:</p>
+<p>OK, so what is our first step? Yup, thats right, we need to tell RStudio where to find all the files we need and pull them in ready for work. Let’s go back to lab 2 and use our previous script to remember how to load the package, read in the data and join the 2 data files together:</p>
 <p>Task 1: Open up tidyverse and read in data</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
-dat &lt;-<span class="st"> </span><span class="kw">read_csv</span> (<span class="st">&#39;files/ahi-cesd.csv&#39;</span>)
-pinfo &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&#39;files/participant-info.csv&#39;</span>)
-all_dat &lt;-<span class="st"> </span><span class="kw">inner_join</span>(dat, pinfo, <span class="dt">by=</span><span class="st">&#39;id&#39;</span>, <span class="st">&#39;intervention&#39;</span>)</code></pre></div>
-<p>Now lets get busy using our tidyverse verbs...</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb8-2" data-line-number="2">dat &lt;-<span class="st"> </span><span class="kw">read_csv</span> (<span class="st">&#39;files/ahi-cesd.csv&#39;</span>)</a>
+<a class="sourceLine" id="cb8-3" data-line-number="3">pinfo &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&#39;files/participant-info.csv&#39;</span>)</a>
+<a class="sourceLine" id="cb8-4" data-line-number="4">all_dat &lt;-<span class="st"> </span><span class="kw">inner_join</span>(dat, pinfo, <span class="dt">by=</span><span class="st">&#39;id&#39;</span>, <span class="st">&#39;intervention&#39;</span>)</a></code></pre></div>
+<p>Now lets get busy using our tidyverse verbs…</p>
 <p>Task 2. Select the columns all_dat, ahiTotal, cesdTotal, sex, age, educ, income, occasion, elapsed.days from the data and creat variable <code>summarydata</code>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">summarydata &lt;-<span class="st"> </span><span class="kw">select</span>(all_dat, ahiTotal, cesdTotal, sex, age, educ, income, occasion, elapsed.days)</code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1">summarydata &lt;-<span class="st"> </span><span class="kw">select</span>(all_dat, ahiTotal, cesdTotal, sex, age, educ, income, occasion, elapsed.days)</a></code></pre></div>
 <p>Task 3. Arrange the data in the variable created above (<code>summarydata</code>) by ahiTotal with lowest score first.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ahi_asc &lt;-<span class="st"> </span><span class="kw">arrange</span>(summarydata, <span class="dt">by =</span> ahiTotal)</code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1">ahi_asc &lt;-<span class="st"> </span><span class="kw">arrange</span>(summarydata, <span class="dt">by =</span> ahiTotal)</a></code></pre></div>
 <p>Task 4. Filter the data <code>ahi_desc</code> by taking out those who are over 65 years of age.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">age_65max &lt;-<span class="st"> </span><span class="kw">filter</span>(ahi_asc, age <span class="op">&lt;</span><span class="st"> </span><span class="dv">65</span>)</code></pre></div>
-<p>Task 5. . Then, use summarise to create a new variable <code>data_median</code>, which calculates the median ahiTotal score in this grouped data and assign it a table head called <code>median_score</code>. <em>(Hint: if you're stuck, see .......).</em></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">data_median &lt;-<span class="st"> </span><span class="kw">summarise</span>(age_65max, <span class="dt">median_score =</span> <span class="kw">median</span>(ahiTotal))</code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1">age_65max &lt;-<span class="st"> </span><span class="kw">filter</span>(ahi_asc, age <span class="op">&lt;</span><span class="st"> </span><span class="dv">65</span>)</a></code></pre></div>
+<p>Task 5. .
+Then, use summarise to create a new variable <code>data_median</code>, which calculates the median ahiTotal score in this grouped data and assign it a table head called <code>median_score</code>.
+<em>(Hint: if you’re stuck, see …….).</em></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">data_median &lt;-<span class="st"> </span><span class="kw">summarise</span>(age_65max, <span class="dt">median_score =</span> <span class="kw">median</span>(ahiTotal))</a></code></pre></div>
 <p>Task 6. Group the data stored in the variable <code>age_65max</code> by sex, and store it in <code>data_sex</code> then use mutate to create a new column called Happiness which categorises participants based on whether they score above the median ahiTotal score for females.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">data_sex &lt;-<span class="st"> </span><span class="kw">group_by</span>(age_65max, sex)
-happy_female &lt;-<span class="st"> </span><span class="kw">mutate</span>(data_sex, <span class="dt">Happiness_Female =</span> (ahiTotal <span class="op">&gt;</span><span class="st"> </span><span class="dv">74</span>))</code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1">data_sex &lt;-<span class="st"> </span><span class="kw">group_by</span>(age_65max, sex)</a>
+<a class="sourceLine" id="cb13-2" data-line-number="2">happy_female &lt;-<span class="st"> </span><span class="kw">mutate</span>(data_sex, <span class="dt">Happiness_Female =</span> (ahiTotal <span class="op">&gt;</span><span class="st"> </span><span class="dv">74</span>))</a></code></pre></div>
 
 </div>
 </div>
@@ -326,9 +397,10 @@ gitbook.start({
 "google": false,
 "linkedin": false,
 "weibo": false,
-"instapaper": false,
+"instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"],
+"instapaper": false
 },
 "fontsettings": {
 "theme": "white",
@@ -336,10 +408,6 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": null,
-"text": null
-},
-"history": {
 "link": null,
 "text": null
 },
@@ -352,6 +420,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

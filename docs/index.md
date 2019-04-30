@@ -2,7 +2,7 @@
 --- 
 title: "ug1-practical"
 author: "psyTeachR"
-date: "2019-03-21"
+date: "2019-04-30"
 site: "bookdown::bookdown_site"
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -23,7 +23,7 @@ This resource outlines the structure and content of our level 1 practical course
 
 3. Live coding is an important part of our teaching. We structure our classes with a staff member leading with support from two Graduate Teaching Assistants (GTAs). This enables the staff member to lead the class through the content while the GTAs can ensure the individual students are being challenged and supported adequately.  
 
-## The overall goal for our students in our year 1 Psychology labs 
+The overall goal for our students in our year 1 Psychology labs 
 * To understand the current state of psychological science and what Open Science is as well as its importance
 * To be clear on the importance of being confident and competent in data management 
 * To be confident and competent at using RStudio as a tool to acheive good data management skills 
