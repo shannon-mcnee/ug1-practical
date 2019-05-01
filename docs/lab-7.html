@@ -5,27 +5,27 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ug1-practical</title>
-  <meta name="description" content="ug1-practical-materials">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <title>Chapter 7 Lab 7 | ug1-practical</title>
+  <meta name="description" content="Chapter 7 Lab 7 | ug1-practical-materials">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="ug1-practical" />
+  <meta property="og:title" content="Chapter 7 Lab 7 | ug1-practical" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="ug1-practical-materials" />
+  <meta property="og:description" content="Chapter 7 Lab 7 | ug1-practical-materials" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="ug1-practical" />
+  <meta name="twitter:title" content="Chapter 7 Lab 7 | ug1-practical" />
   
-  <meta name="twitter:description" content="ug1-practical-materials" />
+  <meta name="twitter:description" content="Chapter 7 Lab 7 | ug1-practical-materials" />
   
 
 <meta name="author" content="psyTeachR">
 
 
-<meta name="date" content="2019-04-30">
+<meta name="date" content="2019-05-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,6 +36,7 @@
 <link rel="next" href="lab-8.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
@@ -50,71 +51,45 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 </style>
 
-<link rel="stylesheet" href="include\psyteachr.css" type="text/css" />
-<link rel="stylesheet" href="include\style.css" type="text/css" />
+<link rel="stylesheet" href="include/psyteachr.css" type="text/css" />
+<link rel="stylesheet" href="include/style.css" type="text/css" />
 </head>
 
 <body>
@@ -173,7 +148,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.2.4" data-path="lab-6.html"><a href="lab-6.html#task-4---question-format"><i class="fa fa-check"></i><b>6.2.4</b> Task 4 - Question format</a></li>
 <li class="chapter" data-level="6.2.5" data-path="lab-6.html"><a href="lab-6.html#task-5---scores"><i class="fa fa-check"></i><b>6.2.5</b> Task 5 - Scores</a></li>
 <li class="chapter" data-level="6.2.6" data-path="lab-6.html"><a href="lab-6.html#task-6---calculate-aq-scores"><i class="fa fa-check"></i><b>6.2.6</b> Task 6 - Calculate AQ scores</a></li>
-<li class="chapter" data-level="6.2.7" data-path="lab-6.html"><a href="lab-6.html#task-7---calculate-aq-scores-contd"><i class="fa fa-check"></i><b>6.2.7</b> Task 7 - Calculate AQ scores cont’d</a></li>
+<li class="chapter" data-level="6.2.7" data-path="lab-6.html"><a href="lab-6.html#task-7---calculate-aq-scores-contd"><i class="fa fa-check"></i><b>6.2.7</b> Task 7 - Calculate AQ scores cont'd</a></li>
 <li class="chapter" data-level="6.2.8" data-path="lab-6.html"><a href="lab-6.html#task-8---calculate-aq-scores-efficiently"><i class="fa fa-check"></i><b>6.2.8</b> Task 8 - Calculate AQ scores efficiently</a></li>
 <li class="chapter" data-level="6.2.9" data-path="lab-6.html"><a href="lab-6.html#task-9---using-ggplot2-make-a-distribution-of-the-overall-aq-scores-by-producing-a-histogram-from-aq_scores."><i class="fa fa-check"></i><b>6.2.9</b> Task 9 - Using ggplot2, make a distribution of the overall AQ scores by producing a histogram from aq_scores.</a></li>
 </ul></li>
@@ -242,20 +217,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>make estimations from probability distributions.</li>
 </ol>
 <p>There are no cheatsheets for this lab as we will not be using a specific package. However you can make full use of the R help function (e.g. <code>?sample</code>) when you are not clear on what a function does. There are loads of videos and help pages out there with clear examples to explain difficult concepts. For now though, and to start this prep, open a new script and load in the <code>tidyverse</code> package (we need this for some visualisation work later).</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" data-line-number="1"><span class="kw">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</code></pre></div>
 <div id="types-of-data" class="section level3">
 <h3><span class="header-section-number">7.2.1</span> Types of data</h3>
-<p>How you tackle probability depends on the type of data/variables you are working with (i.e. discrete or continuous). Sometimes also referred to as <code>Level of Measurements</code>.</p>
-<p><strong>Discrete</strong> data can only take integer values (whole numbers). For example, the number of participants in an experiment would be discrete - we can’t have half a participant! Discrete variables can also be further broken down into <strong>nominal</strong> and <strong>ordinal</strong> variables. Ordinal data is a set of ordered categories; you know which is the top/best and which is the worst/lowest, but not the difference between categories. For example, you could ask participants to rate the attractiveness of different faces based on a 5-item Likert scale (very unattractive, unattractive, neutral, attractive, very attractive). Nominal data is also based on a set of categories but the ordering doesn’t matter (e.g. left or right handed). Nominal is sometimes simply refered to as <code>categorical</code> data.</p>
-<p><strong>Continuous</strong> data on the other hand can take any value. For example, we can measure age on a continuous scale (e.g. we can have an age of 26.55 years), also reaction time or the distance you travel to university every day. It can be broken into <strong>interval</strong> or <strong>ratio</strong> data; but more of that another time.</p>
+<p>How you tackle probability depends on the type of data/variables you are working with (i.e. discrete or continuous). Sometimes also referred to as <code>Level of Measurements</code>.</p>
+<p><strong>Discrete</strong> data can only take integer values (whole numbers). For example, the number of participants in an experiment would be discrete - we can't have half a participant! Discrete variables can also be further broken down into <strong>nominal</strong> and <strong>ordinal</strong> variables. Ordinal data is a set of ordered categories; you know which is the top/best and which is the worst/lowest, but not the difference between categories. For example, you could ask participants to rate the attractiveness of different faces based on a 5-item Likert scale (very unattractive, unattractive, neutral, attractive, very attractive). Nominal data is also based on a set of categories but the ordering doesn't matter (e.g. left or right handed). Nominal is sometimes simply refered to as <code>categorical</code> data.</p>
+<p><strong>Continuous</strong> data on the other hand can take any value. For example, we can measure age on a continuous scale (e.g. we can have an age of 26.55 years), also reaction time or the distance you travel to university every day. It can be broken into <strong>interval</strong> or <strong>ratio</strong> data; but more of that another time.</p>
 </div>
 <div id="simple-probability-calculations" class="section level3">
 <h3><span class="header-section-number">7.2.2</span> Simple probability calculations</h3>
 <p>Today, we are going to run you through the concepts of probability calculations.</p>
-<p>Probability is the extent to which an event is likely to occur and is represented by a real number <em>p</em> between 0 and 1. For example, the probability of flipping a coin and it landing on ‘tails’ most people would say is estimated at <em>p = .5</em>. Calculating the probability of any discrete event occuring can be formulated as:</p>
-<p><span class="math display">\[p = \frac{number \  of  \ ways \ the \ event \ could \  arise}{number \ of \ possible \ outcomes}\]</span>
-For example, what is the probability of randomly drawing your name out of a hat of 12 names where one name is definitely yours?</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" data-line-number="1"><span class="dv">1</span><span class="op">/</span><span class="dv">12</span></a></code></pre></div>
+<p>Probability is the extent to which an event is likely to occur and is represented by a real number <em>p</em> between 0 and 1. For example, the probability of flipping a coin and it landing on 'tails' most people would say is estimated at <em>p = .5</em>. Calculating the probability of any discrete event occuring can be formulated as:</p>
+<p><span class="math display">\[p = \frac{number \  of  \ ways \ the \ event \ could \  arise}{number \ of \ possible \ outcomes}\]</span> For example, what is the probability of randomly drawing your name out of a hat of 12 names where one name is definitely yours?</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">1</span><span class="op">/</span><span class="dv">12</span></code></pre></div>
 <pre><code>## [1] 0.08333333</code></pre>
 </div>
 <div id="joint-probability" class="section level3">
@@ -265,53 +239,55 @@ For example, what is the probability of randomly drawing your name out of a hat 
 </div>
 <div id="prep-exercise-estimate-the-probability-of-getting-x-heads-over-four-independent-flips." class="section level3">
 <h3><span class="header-section-number">7.2.4</span> Prep exercise: Estimate the probability of getting X heads over four independent flips.</h3>
-<p>Let’s start by introducing the sample() function in R, which samples elements from a vector x. A vector is a sequence of data elements of the same basic type. Members in a vector are officially called components. Let’s define a vector c(“HEADS”, “TAILS”) and take four samples from it.</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" data-line-number="1"><span class="co"># Notice that because our event labels are strings (text), </span></a>
-<a class="sourceLine" id="cb31-2" data-line-number="2"><span class="co"># we need to enter them into the function as a vector; i.e. in &quot;quotes&quot; </span></a>
-<a class="sourceLine" id="cb31-3" data-line-number="3"><span class="kw">sample</span>(<span class="kw">c</span>(<span class="st">&quot;HEADS&quot;</span>, <span class="st">&quot;TAILS&quot;</span>), <span class="dt">size =</span> <span class="dv">4</span>, <span class="dt">replace =</span> <span class="ot">TRUE</span>) </a></code></pre></div>
-<pre><code>## [1] &quot;HEADS&quot; &quot;HEADS&quot; &quot;TAILS&quot; &quot;HEADS&quot;</code></pre>
-<p>What you have done here is tell R that you want to sample observations, which in this case was c(“HEADS”, “TAILS”) and the number of samples you want to take, we chose four, which is larger than the size of the vector itself (it has only two components; HEADS and TAILS). For this reason we need to override the default of sampling without replacement or we will get an error (we set replace to TRUE). Sampling without replacement means once an observation appears in the sample, it is removed from the source vector so that it can’t be drawn again. Sampling with replacement means that an observation is retained so it can’t be drawn again. In this case that would mean not being able to toss the coin and get HEADS again after tossing it once which is impossible on a coin.</p>
+<p>Let’s start by introducing the sample() function in R, which samples elements from a vector x. A vector is a sequence of data elements of the same basic type. Members in a vector are officially called components. Let’s define a vector c(&quot;HEADS&quot;, &quot;TAILS&quot;) and take four samples from it.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Notice that because our event labels are strings (text), </span>
+<span class="co"># we need to enter them into the function as a vector; i.e. in &quot;quotes&quot; </span>
+<span class="kw">sample</span>(<span class="kw">c</span>(<span class="st">&quot;HEADS&quot;</span>, <span class="st">&quot;TAILS&quot;</span>), <span class="dt">size =</span> <span class="dv">4</span>, <span class="dt">replace =</span> <span class="ot">TRUE</span>) </code></pre></div>
+<pre><code>## [1] &quot;HEADS&quot; &quot;HEADS&quot; &quot;HEADS&quot; &quot;HEADS&quot;</code></pre>
+<p>What you have done here is tell R that you want to sample observations, which in this case was c(&quot;HEADS&quot;, &quot;TAILS&quot;) and the number of samples you want to take, we chose four, which is larger than the size of the vector itself (it has only two components; HEADS and TAILS). For this reason we need to override the default of sampling without replacement or we will get an error (we set replace to TRUE). Sampling without replacement means once an observation appears in the sample, it is removed from the source vector so that it can’t be drawn again. Sampling with replacement means that an observation is retained so it can't be drawn again. In this case that would mean not being able to toss the coin and get HEADS again after tossing it once which is impossible on a coin.</p>
 <p>It will make our lives easier if we define heads as one and tails as zero and write the same command as follows:</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" data-line-number="1"><span class="co"># Now that our event labels are numeric, we don&#39;t need the vector.</span></a>
-<a class="sourceLine" id="cb33-2" data-line-number="2"><span class="co"># 0:1 means all numbers from 0 to 1 in steps of 1. So basically, 0 and 1.</span></a>
-<a class="sourceLine" id="cb33-3" data-line-number="3"><span class="kw">sample</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">1</span>, <span class="dv">4</span>, <span class="ot">TRUE</span>)</a></code></pre></div>
-<pre><code>## [1] 0 0 1 0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Now that our event labels are numeric, we don&#39;t need the vector.</span>
+<span class="co"># 0:1 means all numbers from 0 to 1 in steps of 1. So basically, 0 and 1.</span>
+<span class="kw">sample</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">1</span>, <span class="dv">4</span>, <span class="ot">TRUE</span>)</code></pre></div>
+<pre><code>## [1] 0 0 1 1</code></pre>
 <p>This is logically equivalent, but using ones and zeroes means that we can count the number of heads by simply summing up the values in the vector. For instance:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" data-line-number="1"><span class="co"># The above statement pipes the output of sample() </span></a>
-<a class="sourceLine" id="cb35-2" data-line-number="2"><span class="co">#then the function sum() which counts up the number of heads.</span></a>
-<a class="sourceLine" id="cb35-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb35-4" data-line-number="4"><span class="kw">sample</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">1</span>, <span class="dv">4</span>, <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">sum</span>()</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># The above statement pipes the output of sample() </span>
+<span class="co">#then the function sum() which counts up the number of heads.</span>
+
+<span class="kw">sample</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">1</span>, <span class="dv">4</span>, <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">sum</span>()</code></pre></div>
 <pre><code>## [1] 2</code></pre>
 <p>Run this function multiple times (you can use the up arrow in the console to avoid having to type it over and over). I ran it five times, and got this:</p>
 <p>The results of my little (N = 5) simulation of flipping four coins and counting heads were: 1, 3, 2, 2, and 3. So in only one out of the five simulations did I get exactly one heads.</p>
 <p>Let’s repeat the experiment a whole bunch more times. We can have R do this over and over again using the replicate() function from base R. The basic syntax of replicate() is replicate(number_of_times, expression_you_want_to_replicate). So</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb37-1" data-line-number="1"><span class="co"># repeats the expression sample(0:1, 4, TRUE) %&gt;% sum() 20 times; the result comes out as a vector with each number represents a count of the number of heads over four flips in each of the 20 ’experiments’.</span></a>
-<a class="sourceLine" id="cb37-2" data-line-number="2"><span class="kw">replicate</span>(<span class="dv">20</span>, <span class="kw">sample</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">1</span>, <span class="dv">4</span>, <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">sum</span>())</a></code></pre></div>
-<pre><code>##  [1] 2 2 2 1 2 1 2 1 1 3 3 1 3 3 1 1 1 2 1 1</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># repeats the expression sample(0:1, 4, TRUE) %&gt;% sum() 20 times; the result comes out as a vector with each number represents a count of the number of heads over four flips in each of the 20 ’experiments’.</span>
+<span class="kw">replicate</span>(<span class="dv">20</span>, <span class="kw">sample</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">1</span>, <span class="dv">4</span>, <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">sum</span>())</code></pre></div>
+<pre><code>##  [1] 0 3 4 3 2 1 4 4 1 2 3 2 3 4 2 1 2 2 3 2</code></pre>
 </div>
 <div id="monte-carlo-simulation" class="section level3">
 <h3><span class="header-section-number">7.2.5</span> Monte Carlo simulation</h3>
 <p>Every year, the city of Monte Carlo is the site of innumerable games of chance played by people from all over the world. This notoriety is reflected in the use of the term “Monte Carlo simulation” among statisticians to refer to use of computer simulation to estimate statistical properties of a random process. In a Monte Carlo simulation, the random process is repeated over and over again in order to assess its performance over the long run. It is usually used in situations where mathematical solutions are unknown or hard to compute. Now we are ready to use Monte Carlo simulation to attack the question of the probability of various outcomes.</p>
 <p>So we are going to run our coin flip experiment we started in the prep materials but this time we are going to run the experiment 50 times (each including 4 coin tosses), or collect 50 data points, and use the same principles to predict the number of heads we will get.</p>
 <p>Store the result in a variable <strong>heads50</strong> using the code below:</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" data-line-number="1">heads50 &lt;-<span class="st"> </span><span class="kw">replicate</span>(<span class="dv">50</span>, <span class="kw">sample</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">1</span>, <span class="dv">4</span>, <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">sum</span>())   </a>
-<a class="sourceLine" id="cb39-2" data-line-number="2"><span class="co"># this time we save the output in the variable heads50</span></a>
-<a class="sourceLine" id="cb39-3" data-line-number="3"><span class="co"># so we can work with the results further</span></a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">heads50 &lt;-<span class="st"> </span><span class="kw">replicate</span>(<span class="dv">50</span>, <span class="kw">sample</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">1</span>, <span class="dv">4</span>, <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">sum</span>())   
+<span class="co"># this time we save the output in the variable heads50</span>
+<span class="co"># so we can work with the results further</span></code></pre></div>
 <p>Each of these numbers represents the number of heads as the outcome of 50 lots of 4 coin tosses so the first 2 data points tell us that they each produced heads twice. Your results may differ, since sample() is random. In this case, four of the experiments yielded the outcome of 4/4 heads.</p>
 <p>Note that we can estimate the probability of each of the outcomes (0, 1, 2, 3, 4 heads) by counting them up and dividing through by the number of experiments. We will do this by putting the experiments in a data_frame() and then using count().</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb40-1" data-line-number="1">data50 &lt;-<span class="st"> </span><span class="kw">data_frame</span>(<span class="dt">heads =</span> heads50) <span class="op">%&gt;%</span><span class="st">   </span><span class="co"># convert to a data frame </span></a>
-<a class="sourceLine" id="cb40-2" data-line-number="2"><span class="st">                </span><span class="kw">group_by</span>(heads) <span class="op">%&gt;%</span><span class="st">           </span><span class="co"># group by number of possibilities</span></a>
-<a class="sourceLine" id="cb40-3" data-line-number="3"><span class="st">                </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n</span>(), <span class="dt">p=</span>n<span class="op">/</span><span class="dv">50</span>) <span class="co"># count occurances of possibility,</span></a>
-<a class="sourceLine" id="cb40-4" data-line-number="4">                                              <span class="co"># &amp; calculate probability (p) of</span></a>
-<a class="sourceLine" id="cb40-5" data-line-number="5">                                              <span class="co"># each</span></a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">data50 &lt;-<span class="st"> </span><span class="kw">data_frame</span>(<span class="dt">heads =</span> heads50) <span class="op">%&gt;%</span><span class="st">   </span><span class="co"># convert to a data frame </span>
+<span class="st">                </span><span class="kw">group_by</span>(heads) <span class="op">%&gt;%</span><span class="st">           </span><span class="co"># group by number of possibilities</span>
+<span class="st">                </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n</span>(), <span class="dt">p=</span>n<span class="op">/</span><span class="dv">50</span>) <span class="co"># count occurances of possibility,</span></code></pre></div>
+<pre><code>## Warning: `data_frame()` is deprecated, use `tibble()`.
+## This warning is displayed once per session.</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">                                              <span class="co"># &amp; calculate probability (p) of</span>
+                                              <span class="co"># each</span></code></pre></div>
 <p>What we have done here is created a variable <strong>heads50</strong> in a new data_frame object that contains the results from our 50 experiments, grouped it by the values in <strong>heads50</strong> (0, 1, 2, 3, or 4), and counted the number of times each value was observed in summarise(n = n()), and then calculated the probability by dividing the newly created variable n by the number of experiments (50).</p>
 <p>We can then plot a histogram of the outcomes using ggplot2.</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" data-line-number="1"><span class="co"># Note: stat = &quot;identity&quot; tells  ggplot to use the values of the y-axis variable (p) as the height of the bars in our histogram (as opposed counting the number of occurances of those values)</span></a>
-<a class="sourceLine" id="cb41-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb41-3" data-line-number="3"><span class="kw">ggplot</span>(data50, <span class="kw">aes</span>(heads,p)) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb41-4" data-line-number="4"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;purple&quot;</span>) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb41-5" data-line-number="5"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Number of Heads&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Probability of Heads in 4 flips (p)&quot;</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb41-6" data-line-number="6"><span class="st">  </span><span class="kw">theme_bw</span>()</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Note: stat = &quot;identity&quot; tells  ggplot to use the values of the y-axis variable (p) as the height of the bars in our histogram (as opposed counting the number of occurances of those values)</span>
+
+<span class="kw">ggplot</span>(data50, <span class="kw">aes</span>(heads,p)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;purple&quot;</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Number of Heads&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Probability of Heads in 4 flips (p)&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme_bw</span>()</code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:data50hist"></span>
 <img src="07-lab07_files/figure-html/data50hist-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
 <p class="caption">
@@ -319,16 +295,16 @@ Figure 7.1: <strong>CAPTION THIS FIGURE!!</strong>
 </p>
 </div>
 <p>So the estimated probabilites are 0.02 for 0/4 heads, 0.24 for 1/4 heads, etc. Unfortunately sometimes this calculation will estimate that the probabilty of an outcome is zero since this outcome never came up when the simulation is run. If you want reliable estimates, you need a bigger sample as we know that this was a possible outcome but just didnt come about this time.</p>
-<p>Let’s repeat the Monte Carlo simulation, but with 10,000 experiments instead of just 50. Here we are again using R to tackle big data and multiple calculations which is much faster and more efficient than if we had to figure this out by hand!</p>
-<p>All we have to do is change the 50 to 10000 in the above call to replicate. Again, we’ll put the vector in a data frame and calculate counts and probabilities of each outcome using group_by() and summarise().</p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb42-1" data-line-number="1">heads10K &lt;-<span class="st"> </span><span class="kw">replicate</span>(<span class="dv">10000</span>, <span class="kw">sample</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">1</span>, <span class="dv">4</span>, <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">sum</span>())   </a>
-<a class="sourceLine" id="cb42-2" data-line-number="2"><span class="co"># this time we save the output in the variable heads10K</span></a></code></pre></div>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb43-1" data-line-number="1">data10K &lt;-<span class="st"> </span><span class="kw">data_frame</span>(<span class="dt">heads =</span> heads10K) <span class="op">%&gt;%</span><span class="st">   </span></a>
-<a class="sourceLine" id="cb43-2" data-line-number="2"><span class="st">                </span><span class="kw">group_by</span>(heads) <span class="op">%&gt;%</span><span class="st">           </span></a>
-<a class="sourceLine" id="cb43-3" data-line-number="3"><span class="st">                </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n</span>(), <span class="dt">p=</span>n<span class="op">/</span><span class="dv">10000</span>) </a></code></pre></div>
-<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb44-1" data-line-number="1"><span class="kw">ggplot</span>(data10K, <span class="kw">aes</span>(heads,p)) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb44-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;purple&quot;</span>) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb44-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Number of Heads&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Probability of Heads in 4 flips (p)&quot;</span>) </a></code></pre></div>
+<p>Let's repeat the Monte Carlo simulation, but with 10,000 experiments instead of just 50. Here we are again using R to tackle big data and multiple calculations which is much faster and more efficient than if we had to figure this out by hand!</p>
+<p>All we have to do is change the 50 to 10000 in the above call to replicate. Again, we'll put the vector in a data frame and calculate counts and probabilities of each outcome using group_by() and summarise().</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">heads10K &lt;-<span class="st"> </span><span class="kw">replicate</span>(<span class="dv">10000</span>, <span class="kw">sample</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">1</span>, <span class="dv">4</span>, <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">sum</span>())   
+<span class="co"># this time we save the output in the variable heads10K</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">data10K &lt;-<span class="st"> </span><span class="kw">data_frame</span>(<span class="dt">heads =</span> heads10K) <span class="op">%&gt;%</span><span class="st">   </span>
+<span class="st">                </span><span class="kw">group_by</span>(heads) <span class="op">%&gt;%</span><span class="st">           </span>
+<span class="st">                </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n</span>(), <span class="dt">p=</span>n<span class="op">/</span><span class="dv">10000</span>) </code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(data10K, <span class="kw">aes</span>(heads,p)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;purple&quot;</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Number of Heads&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Probability of Heads in 4 flips (p)&quot;</span>) </code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:data10Khist"></span>
 <img src="07-lab07_files/figure-html/data10Khist-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
 <p class="caption">
@@ -337,14 +313,14 @@ Figure 7.2: <strong>CAPTION THIS FIGURE!!</strong>
 </div>
 <p>So using Monte Carlo simulation, we estimate that the probability of getting exactly one head on four throws is about 0.25. The above result represents a probability distribution for all the possible outcomes in our experiments. We can derive lots of useful information from this.</p>
 <p>For instance, what is the probability of getting two or more heads in four throws? This is easy: the outcomes meeting the criterion are 2, 3, or 4 heads. We can just add these probabilities together like so:</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb45-1" data-line-number="1">data10K <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb45-2" data-line-number="2"><span class="st">  </span><span class="kw">filter</span>(heads <span class="op">&gt;=</span><span class="st"> </span><span class="dv">2</span>) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb45-3" data-line-number="3"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">p2 =</span> <span class="kw">sum</span>(p))</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">data10K <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">filter</span>(heads <span class="op">&gt;=</span><span class="st"> </span><span class="dv">2</span>) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">p2 =</span> <span class="kw">sum</span>(p))</code></pre></div>
 <pre><code>## # A tibble: 1 x 1
 ##      p2
 ##   &lt;dbl&gt;
-## 1 0.690</code></pre>
-<p>You can add probabilities for various outcomes together as long as the outcomes are mutually exclusive, that is, when one outcome occurs, the others can’t occur. For this coin flipping example, this is obviously the case: you can’t simultaneously get exactly two and exactly three heads as the outcome of a single experiment. However, be aware that you can’t simply add probabilities together when the events in question are not mutually exclusive: for example, the probability of the coin landing heads up, and it landing with the image of the head being in a particular orientation are not mutually exclusive, and can’t be simply added together.</p>
+## 1 0.692</code></pre>
+<p>You can add probabilities for various outcomes together as long as the outcomes are mutually exclusive, that is, when one outcome occurs, the others can't occur. For this coin flipping example, this is obviously the case: you can't simultaneously get exactly two and exactly three heads as the outcome of a single experiment. However, be aware that you can't simply add probabilities together when the events in question are not mutually exclusive: for example, the probability of the coin landing heads up, and it landing with the image of the head being in a particular orientation are not mutually exclusive, and can't be simply added together.</p>
 <p>The probabilities we got from Monte Carlo simulation are just estimates; we need something more definitive.</p>
 </div>
 </div>
@@ -362,20 +338,19 @@ Figure 7.2: <strong>CAPTION THIS FIGURE!!</strong>
 </div>
 <div id="the-binomial-distribution---creating-a-discrete-distribution" class="section level2">
 <h2><span class="header-section-number">7.6</span> The Binomial Distribution - Creating a Discrete Distribution</h2>
-<p>So far we have learnt how probabilities and distributions work using the simple probability calculation. However, if we had wanted to calculate the probability of 8 heads from 10 coin flips we don’t have to go through this entire procedure each time. Instead, because we have a dichotomous outcome, heads or tails, we can calculate probabilities using the <strong>binomial distribution</strong> - effectively what you just created. We will walk through some essentials here.</p>
-<p>We’ll use 3 functions to work with the binomial distribution:</p>
-<p><strong>dbinom</strong> - the density function: gives you the probability of x successes (heads) given the no of trials and probability of success probability on a single trial (here it’s 0.5, because we assume we’re flipping a fair coin).</p>
-<p><strong>pbinom</strong> - the distribution function: gives you the cumulative probability of getting a number of successes below a certain cut-off point (e.g. probability of getting 0 to 5 heads out of 10 flips), given the size and the prob. Known as the cumulative probability distribution function or the cumulative density function.</p>
+<p>So far we have learnt how probabilities and distributions work using the simple probability calculation. However, if we had wanted to calculate the probability of 8 heads from 10 coin flips we don't have to go through this entire procedure each time. Instead, because we have a dichotomous outcome, heads or tails, we can calculate probabilities using the <strong>binomial distribution</strong> - effectively what you just created. We will walk through some essentials here.</p>
+<p>We'll use 3 functions to work with the binomial distribution:</p>
+<p><strong>dbinom</strong> - the density function: gives you the probability of x successes (heads) given the no of trials and probability of success probability on a single trial (here it's 0.5, because we assume we're flipping a fair coin).</p>
+<p><strong>pbinom</strong> - the distribution function: gives you the cumulative probability of getting a number of successes below a certain cut-off point (e.g. probability of getting 0 to 5 heads out of 10 flips), given the size and the prob. Known as the cumulative probability distribution function or the cumulative density function.</p>
 <p><strong>qbinom</strong> - the quantile function: is the inverse of pbinom in that it gives you the x axis value below (and including the value) which the summation of probabilities is greater than or equal to a given probability p, plus given the size and prob.</p>
-<p>So let’s try these functions out to answer the two questions:</p>
+<p>So let's try these functions out to answer the two questions:</p>
 <ol style="list-style-type: decimal">
 <li>What is the probability of getting exactly 5 heads on 10 flips?</li>
 <li>What is the probability of getting at most 2 heads on 10 flips?</li>
 </ol>
-<p>Let’s start with question 1, what is the probability of getting exactly 5 heads on 10 flips?
-So we want to predict the probability of getting 5 heads in 10 trials (coin flips) and the probability of success is 0.5 (it’ll either be heads or tails so you have a 50/50 chance which we write as 0.5).</p>
+<p>Let's start with question 1, what is the probability of getting exactly 5 heads on 10 flips? So we want to predict the probability of getting 5 heads in 10 trials (coin flips) and the probability of success is 0.5 (it'll either be heads or tails so you have a 50/50 chance which we write as 0.5).</p>
 <p>We write that as:</p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb47-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">5</span>, <span class="dv">10</span>, <span class="fl">0.5</span>)</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">dbinom</span>(<span class="dv">5</span>, <span class="dv">10</span>, <span class="fl">0.5</span>)</code></pre></div>
 <p>The probability of getting 5 heads out of 10 coin flips is 0.25 (to 2 decimal places).</p>
 <p>which would look like this:</p>
 <div class="figure" style="text-align: center">
@@ -384,18 +359,14 @@ So we want to predict the probability of getting 5 heads in 10 trials (coin flip
 (#fig:binom_plot1)<strong>CAPTION THIS FIGURE!!</strong>
 </p>
 </div>
-<p>The dbinom (density binom) function takes the format of dbinom(x, size, prob), where the arguments we give are:
-* x the number of ‘heads’ we want to know the probability of. Either a single one, 3 or a series 0:10. In this case it’s 5.
-* size the number of trials (flips) we are doing; in this case, 10 flips.
-* prob the probability of ‘heads’ on one trial. Here chance is 50-50 which as a probability we state as 0.5 or .5</p>
-<p>OK, question number 2….What is the probability of getting at most 2 heads on 10 flips?
-This time we use <strong>pbinom</strong> as we want to know the <strong>cumulative probability</strong> of getting a maximum of 2 heads from 10 coin flips so we have set a cut-off point of 2 but we still have a probability of getting a heads of 0.5.</p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb48-1" data-line-number="1"><span class="kw">pbinom</span>(<span class="dv">2</span>, <span class="dv">10</span>, <span class="fl">0.5</span>)</a></code></pre></div>
+<p>The dbinom (density binom) function takes the format of dbinom(x, size, prob), where the arguments we give are: * x the number of ‘heads’ we want to know the probability of. Either a single one, 3 or a series 0:10. In this case it's 5. * size the number of trials (flips) we are doing; in this case, 10 flips. * prob the probability of ‘heads’ on one trial. Here chance is 50-50 which as a probability we state as 0.5 or .5</p>
+<p>OK, question number 2....What is the probability of getting at most 2 heads on 10 flips? This time we use <strong>pbinom</strong> as we want to know the <strong>cumulative probability</strong> of getting a maximum of 2 heads from 10 coin flips so we have set a cut-off point of 2 but we still have a probability of getting a heads of 0.5.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pbinom</span>(<span class="dv">2</span>, <span class="dv">10</span>, <span class="fl">0.5</span>)</code></pre></div>
 <p>The probability of us getting a maximum of 2 heads on 10 coin flips is 0.05 (2 decimal places).</p>
 <p>Note that there is another way we could have done this:</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb49-1" data-line-number="1">probs &lt;-<span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">2</span>, <span class="dv">10</span>, <span class="fl">0.5</span>)</a>
-<a class="sourceLine" id="cb49-2" data-line-number="2">probs</a>
-<a class="sourceLine" id="cb49-3" data-line-number="3"><span class="kw">sum</span>(probs)</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">probs &lt;-<span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">2</span>, <span class="dv">10</span>, <span class="fl">0.5</span>)
+probs
+<span class="kw">sum</span>(probs)</code></pre></div>
 <p>Note that in this latter strategy, we are just adding up the heights of the three blue bars for the probabilities of getting 0,1 or 2 heads therefore calculating the cumulative probablity of this scenario.</p>
 <div class="figure" style="text-align: center">
 <img src="07-lab07_files/figure-html/binom_plot2-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
@@ -403,8 +374,7 @@ This time we use <strong>pbinom</strong> as we want to know the <strong>cumulati
 (#fig:binom_plot2)<strong>CAPTION THIS FIGURE!!</strong>
 </p>
 </div>
-<p>Let’s try one more scenario with a cut-off point to make sure we have this. What is the probability of getting 7 or more heads on 10 flips?
-We can actually approach this in two different ways. We have done one way to answer the previous question which we can use again here but instead of using a maximum of 2 coin flips (0:2) we are setting the cut-off as 7 to 10 (7:10).</p>
+<p>Let's try one more scenario with a cut-off point to make sure we have this. What is the probability of getting 7 or more heads on 10 flips? We can actually approach this in two different ways. We have done one way to answer the previous question which we can use again here but instead of using a maximum of 2 coin flips (0:2) we are setting the cut-off as 7 to 10 (7:10).</p>
 <pre><code>## [1] 3.933594</code></pre>
 <p>But we can also think about this in terms of the tails of the plots. Are we interested in the lower tail of the plot or the higher tail? Well, it depends on where our cut-off sits. What pbinom() gives us is the probability of getting 0 to 6 successes (the lower tail of the distribution, given by the blue bars). The total area under the curve for a theoretical distribution sums to 1. If we want the upper tail instead, we set lower.tail to FALSE, and this will give us the probability for the blue bars. In this example, our cut off is 7 up to 10 so we will set lower.tail = FALSE as we are interested in the upper tail of the distribution.</p>
 <pre><code>## [1] 0.171875</code></pre>
@@ -414,12 +384,12 @@ We can actually approach this in two different ways. We have done one way to ans
 (#fig:binom_plot3)<strong>CAPTION THIS FIGURE!!</strong>
 </p>
 </div>
-<p>OK now let’s consider a scenario in which you’d use the quantile function qbinom(). You suspect that the coin is biased against heads. Your null hypothesis is that the coin is not biased against heads (P(heads)=.5). You are going to run a single experiment to test your hypothesis, with 10 trials. What is the minimum number of successes that is acceptable if you want to keep your chances of getting heads for this type of experiment at .05?</p>
+<p>OK now let's consider a scenario in which you'd use the quantile function qbinom(). You suspect that the coin is biased against heads. Your null hypothesis is that the coin is not biased against heads (P(heads)=.5). You are going to run a single experiment to test your hypothesis, with 10 trials. What is the minimum number of successes that is acceptable if you want to keep your chances of getting heads for this type of experiment at .05?</p>
 <pre><code>## [1] 2</code></pre>
 <p>So if you got less than two heads, you would reject the null that the coin was unbiased against heads.</p>
 <p>Ten trials is probably far too few. What would your cutoff be if you ran 100 trials? 1000? 10000?</p>
 <pre><code>## [1]   42  474 4918</code></pre>
-<p>You have used probability in the previous two functions, dbinom and pbinom, and it represents the probability of success on a single trial (here it is the probability of ‘heads’ in one coin flip, .5). Now, probability represents the probability of success in one trial, whereas p represents the overall probability of success across all trials and gives you the number of heads that would give that probability. So you ask it for the minimum number of successes (e.g. heads) to maintain an overall probability of .05, in 10 flips, when the probability of a success on any one flip is .5. And it tells you the answer is 2. qbinom also uses the lower.tail argument and it works in a similar fashion to pbinom.</p>
+<p>You have used probability in the previous two functions, dbinom and pbinom, and it represents the probability of success on a single trial (here it is the probability of 'heads' in one coin flip, .5). Now, probability represents the probability of success in one trial, whereas p represents the overall probability of success across all trials and gives you the number of heads that would give that probability. So you ask it for the minimum number of successes (e.g. heads) to maintain an overall probability of .05, in 10 flips, when the probability of a success on any one flip is .5. And it tells you the answer is 2. qbinom also uses the lower.tail argument and it works in a similar fashion to pbinom.</p>
 <p><strong>Congratulations!</strong> You are well on you way to understanding binomial probability so complete the assessment for this lab and submit one week from attending by 12pm. Next time we will be looking at normal distributions and probability.</p>
 
 </div>
@@ -535,10 +505,9 @@ gitbook.start({
 "google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"],
-"instapaper": false
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -546,6 +515,10 @@ gitbook.start({
 "size": 2
 },
 "edit": {
+"link": null,
+"text": null
+},
+"history": {
 "link": null,
 "text": null
 },
@@ -563,8 +536,8 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');
     script.src = src;

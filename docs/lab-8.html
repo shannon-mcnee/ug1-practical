@@ -5,27 +5,27 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ug1-practical</title>
-  <meta name="description" content="ug1-practical-materials">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <title>Chapter 8 Lab 8 | ug1-practical</title>
+  <meta name="description" content="Chapter 8 Lab 8 | ug1-practical-materials">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="ug1-practical" />
+  <meta property="og:title" content="Chapter 8 Lab 8 | ug1-practical" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="ug1-practical-materials" />
+  <meta property="og:description" content="Chapter 8 Lab 8 | ug1-practical-materials" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="ug1-practical" />
+  <meta name="twitter:title" content="Chapter 8 Lab 8 | ug1-practical" />
   
-  <meta name="twitter:description" content="ug1-practical-materials" />
+  <meta name="twitter:description" content="Chapter 8 Lab 8 | ug1-practical-materials" />
   
 
 <meta name="author" content="psyTeachR">
 
 
-<meta name="date" content="2019-04-30">
+<meta name="date" content="2019-05-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,6 +36,7 @@
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
@@ -50,71 +51,45 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 </style>
 
-<link rel="stylesheet" href="include\psyteachr.css" type="text/css" />
-<link rel="stylesheet" href="include\style.css" type="text/css" />
+<link rel="stylesheet" href="include/psyteachr.css" type="text/css" />
+<link rel="stylesheet" href="include/style.css" type="text/css" />
 </head>
 
 <body>
@@ -173,7 +148,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.2.4" data-path="lab-6.html"><a href="lab-6.html#task-4---question-format"><i class="fa fa-check"></i><b>6.2.4</b> Task 4 - Question format</a></li>
 <li class="chapter" data-level="6.2.5" data-path="lab-6.html"><a href="lab-6.html#task-5---scores"><i class="fa fa-check"></i><b>6.2.5</b> Task 5 - Scores</a></li>
 <li class="chapter" data-level="6.2.6" data-path="lab-6.html"><a href="lab-6.html#task-6---calculate-aq-scores"><i class="fa fa-check"></i><b>6.2.6</b> Task 6 - Calculate AQ scores</a></li>
-<li class="chapter" data-level="6.2.7" data-path="lab-6.html"><a href="lab-6.html#task-7---calculate-aq-scores-contd"><i class="fa fa-check"></i><b>6.2.7</b> Task 7 - Calculate AQ scores cont’d</a></li>
+<li class="chapter" data-level="6.2.7" data-path="lab-6.html"><a href="lab-6.html#task-7---calculate-aq-scores-contd"><i class="fa fa-check"></i><b>6.2.7</b> Task 7 - Calculate AQ scores cont'd</a></li>
 <li class="chapter" data-level="6.2.8" data-path="lab-6.html"><a href="lab-6.html#task-8---calculate-aq-scores-efficiently"><i class="fa fa-check"></i><b>6.2.8</b> Task 8 - Calculate AQ scores efficiently</a></li>
 <li class="chapter" data-level="6.2.9" data-path="lab-6.html"><a href="lab-6.html#task-9---using-ggplot2-make-a-distribution-of-the-overall-aq-scores-by-producing-a-histogram-from-aq_scores."><i class="fa fa-check"></i><b>6.2.9</b> Task 9 - Using ggplot2, make a distribution of the overall AQ scores by producing a histogram from aq_scores.</a></li>
 </ul></li>
@@ -234,25 +209,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="discrete-or-continuous-datasets" class="section level2">
 <h2><span class="header-section-number">8.2</span> Discrete or Continuous Datasets</h2>
-<p>This is a short tutorial with just a couple of quick questions on how the <code>level of measurement</code> can alter the way you tackle probability - i.e. whether the data is discrete or continuous. The four level of measurements are nominal (also called categorical), ordinal, interval and ratio. Discrete data only uses categories or whole numbers and is therefore either nominal or ordinal data. Continuous data can take any value, e.g. 9.00 or 9.999999999, and so is either interval or ratio data.</p>
+<p>This is a short tutorial with just a couple of quick questions on how the <code>level of measurement</code> can alter the way you tackle probability - i.e. whether the data is discrete or continuous. The four level of measurements are nominal (also called categorical), ordinal, interval and ratio. Discrete data only uses categories or whole numbers and is therefore either nominal or ordinal data. Continuous data can take any value, e.g. 9.00 or 9.999999999, and so is either interval or ratio data.</p>
 <div id="quickfire-questions" class="section level4">
 <h4><span class="header-section-number">8.2.0.1</span> <span style="color:DARKGREEN"> Quickfire Questions</span></h4>
-<p><strong>Discrete</strong> data can only take integer values (whole numbers). For example, the number of participants in an experiment would be discrete - we can’t have half a participant! Discrete variables can also be further broken down into <strong>nominal/categorical</strong> and <strong>ordinal</strong> variables. Watch this video to help you understand the differences a little more and then try the following questions. link(<a href="https://youtu.be/6IdJ1aPFDCs" class="uri">https://youtu.be/6IdJ1aPFDCs</a>)
-<br>
-Fill in the blanks in the below sentences using the words: ordinal, nominal, categorical.</p>
+<p><strong>Discrete</strong> data can only take integer values (whole numbers). For example, the number of participants in an experiment would be discrete - we can't have half a participant! Discrete variables can also be further broken down into <strong>nominal/categorical</strong> and <strong>ordinal</strong> variables. Watch this video to help you understand the differences a little more and then try the following questions. link(<a href="https://youtu.be/6IdJ1aPFDCs" class="uri">https://youtu.be/6IdJ1aPFDCs</a>) <br> Fill in the blanks in the below sentences using the words: ordinal, nominal, categorical.</p>
 <ul>
-<li><p><input class='solveme nospaces ignorecase' size='8' data-answer='["categorical"]'/> data is based on a set of categories but the ordering doesn’t matter (e.g. left or right handed. This is sometimes referred to as <input class='solveme nospaces ignorecase' size='8' data-answer='["nominal"]'/> data. For example, you could separate participants according to left or right handedness or by education level.</p></li>
+<li><p><input class='solveme nospaces ignorecase' size='8' data-answer='["categorical"]'/> data is based on a set of categories but the ordering doesn't matter (e.g. left or right handed. This is sometimes referred to as <input class='solveme nospaces ignorecase' size='8' data-answer='["nominal"]'/> data. For example, you could separate participants according to left or right handedness or by education level.</p></li>
 <li><p><input class='solveme nospaces ignorecase' size='8' data-answer='["ordinal"]'/> data is a set of ordered categories; you know which is the top/best and which is the worst/lowest, but not the difference between categories. For example, you could ask participants to rate the attractiveness of different faces based on a 5-item Likert scale (very unattractive, unattractive, neutral, attractive, very attractive).</p></li>
 </ul>
-<p><strong>Continuous</strong> data on the other hand can take any value. For example, we can measure age on a continuous scale (e.g. we can have an age of 26.55 years), also reaction time or the distance you travel to university every day.</p>
+<p><strong>Continuous</strong> data on the other hand can take any value. For example, we can measure age on a continuous scale (e.g. we can have an age of 26.55 years), also reaction time or the distance you travel to university every day.</p>
 <ul>
 <li>Continuous data can be broken into interval or ratio data.</li>
 <li>Interval data is data which comes in the form of a numerical value where the difference between points is standardised and meaningful. For example temperature, the difference in temperature between 10-20 degrees is the same as the difference in temperature between 20-30 degrees.</li>
-<li>Ratio data is very like interval but has a true zero point. With our interval temperature example above, we have been experiencing negative temperatures (-1,-2 degrees) in Glasgow but with ratio data you don’t see negative values such as these i.e. you can’t be -10 cm tall.</li>
+<li>Ratio data is very like interval but has a true zero point. With our interval temperature example above, we have been experiencing negative temperatures (-1,-2 degrees) in Glasgow but with ratio data you don't see negative values such as these i.e. you can't be -10 cm tall.</li>
 </ul>
 <p>When you read journal articles or when you are working with data in the lab, it is really good practice to take a minute or two to figure out the type of variables you are reading about and/or working with.</p>
-<p>To recap, the four level of measurements are nominal (also called categorical), ordinal, interval and ratio. Discrete data only uses categories or whole numbers and is therefore either nominal or ordinal data. Continuous data can take any value, e.g. 9.00 or 9.999999999, and so is either interval or ratio data. We have introduced these concepts in a little more depth as we are moving onto lab 4 and normal distribution probability so this will help with understanding this concept in relation to binomial probability and the different types of data involved.</p>
-<p><strong>Recap</strong> Binomial distributions are based on scenarios where the outcome can only be 1 of 2 options e.g. heads or tails whereas normal distributions are based on continuous data e.g. height or age where you can score anywhere along a continuum. For example, you could describe someone as 21.5 years old and 176cm tall.</p>
+<p>To recap, the four level of measurements are nominal (also called categorical), ordinal, interval and ratio. Discrete data only uses categories or whole numbers and is therefore either nominal or ordinal data. Continuous data can take any value, e.g. 9.00 or 9.999999999, and so is either interval or ratio data. We have introduced these concepts in a little more depth as we are moving onto lab 4 and normal distribution probability so this will help with understanding this concept in relation to binomial probability and the different types of data involved.</p>
+<p><strong>Recap</strong> Binomial distributions are based on scenarios where the outcome can only be 1 of 2 options e.g. heads or tails whereas normal distributions are based on continuous data e.g. height or age where you can score anywhere along a continuum. For example, you could describe someone as 21.5 years old and 176cm tall.</p>
 </div>
 </div>
 <div id="normal-distribution" class="section level2">
@@ -272,50 +245,38 @@ Fill in the blanks in the below sentences using the words: ordinal, nominal, cat
 <p><strong>Note:</strong> You should complete the below code chunks by replacing the <code>NULL</code> (except the library chunk where the appropriate code should just be entered).</p>
 <p>Staff will talk you through the mean and standard deviations in relation to a normal distribution. A normal distribution looks something like this:</p>
 <p>!*<a href="norm_dist_height.png"><strong>Fig. 1 Normal Distribution of height</strong></a></p>
-<p>With the binomial distribution in lab 3 we plotted the number of successes, heads or tails, we achieved with a certain number of throws so we use a bar plot e.g. how many heads we got between 1 and 10 tosses of the coin. This time with our height example above, we are plotting the number of people of each height along a continuum between two points, ~140cm to ~200cm. For this, we use a histogram which is the plot above.</p>
+<p>With the binomial distribution in lab 3 we plotted the number of successes, heads or tails, we achieved with a certain number of throws so we use a bar plot e.g. how many heads we got between 1 and 10 tosses of the coin. This time with our height example above, we are plotting the number of people of each height along a continuum between two points, ~140cm to ~200cm. For this, we use a histogram which is the plot above.</p>
 </div>
 <div id="working-with-the-normal-distribution" class="section level2">
 <h2><span class="header-section-number">8.6</span> Working with the Normal Distribution</h2>
-<p>We won’t ask you to create a normal distribution as it is more complicated than the binomial distribution you estimated in lab 3. Unlike coin flips, the outcome in the normal distribution is not just 50/50. Just as with the binomial distribution (and other distributions) there are functions that allow us to estimate the normal distribution and to ask questions about the distribution. These are:</p>
-<p>dnorm() - the density function
-pnorm() - the probability or distribution function
-qnorm() - the quantile function
-They work in a similar way to their binomial counterparts. If you are unsure about how a function works you can call the help on it by typing in the console, for example, ?dnorm or ?dnorm(), but the brackets aren’t essential for the help.</p>
-<p>In this lab we will focus on <code>pnorm()</code> and <code>qnorm()</code>. You will have become acquainted with these terms in the pre lab materials but let’s quickly revist them together before working our way through some other examples.</p>
+<p>We won't ask you to create a normal distribution as it is more complicated than the binomial distribution you estimated in lab 3. Unlike coin flips, the outcome in the normal distribution is not just 50/50. Just as with the binomial distribution (and other distributions) there are functions that allow us to estimate the normal distribution and to ask questions about the distribution. These are:</p>
+<p>dnorm() - the density function pnorm() - the probability or distribution function qnorm() - the quantile function They work in a similar way to their binomial counterparts. If you are unsure about how a function works you can call the help on it by typing in the console, for example, ?dnorm or ?dnorm(), but the brackets aren't essential for the help.</p>
+<p>In this lab we will focus on <code>pnorm()</code> and <code>qnorm()</code>. You will have become acquainted with these terms in the pre lab materials but let's quickly revist them together before working our way through some other examples.</p>
 <p><br></p>
-<p>So lets start using some code to calculate the probabilities of people being a certain height. The average height () of a 16-24 year old Scotsman is 176.2 centimetres, with a standard deviation () of 6.748. The average height () of a 16-24 year old Scotswoman is 163.8 cm, with a standard deviation () of 6.931.
-(Data from the [Scottish Health Survey, 2008]
-(<a href="http://www.scotland.gov.uk/Resource/Doc/286063/0087158.pdf" class="uri">http://www.scotland.gov.uk/Resource/Doc/286063/0087158.pdf</a>)</p>
+<p>So lets start using some code to calculate the probabilities of people being a certain height. The average height () of a 16-24 year old Scotsman is 176.2 centimetres, with a standard deviation () of 6.748. The average height () of a 16-24 year old Scotswoman is 163.8 cm, with a standard deviation () of 6.931. (Data from the [Scottish Health Survey, 2008] (<a href="http://www.scotland.gov.uk/Resource/Doc/286063/0087158.pdf" class="uri">http://www.scotland.gov.uk/Resource/Doc/286063/0087158.pdf</a>)</p>
 <ol style="list-style-type: decimal">
-<li>What is the probability of meeting a 16-24 y.o. Scotswoman who is
-taller than the average 16-24 y.o. Scotsman?</li>
+<li>What is the probability of meeting a 16-24 y.o. Scotswoman who is taller than the average 16-24 y.o. Scotsman?</li>
 </ol>
-<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb54-1" data-line-number="1"><span class="co">## </span><span class="al">NOTE</span><span class="co">: uncomment and replace NULL with your answer; do not change the name of the variable!</span></a>
-<a class="sourceLine" id="cb54-2" data-line-number="2">p_taller_w &lt;-<span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">176.2</span>, <span class="fl">163.8</span>, <span class="fl">6.931</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## <span class="al">NOTE</span>: uncomment and replace NULL with your answer; do not change the name of the variable!
+p_taller_w &lt;-<span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">176.2</span>, <span class="fl">163.8</span>, <span class="fl">6.931</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</code></pre></div>
 <ol start="2" style="list-style-type: decimal">
-<li>Fiona is a very tall Scotswoman (181.12cm) in the 16-24
-y.o. range who refuses to date men who are shorter than her. What
-proportion of all 16-24 Scotsmen would she be willing to date?</li>
+<li>Fiona is a very tall Scotswoman (181.12cm) in the 16-24 y.o. range who refuses to date men who are shorter than her. What proportion of all 16-24 Scotsmen would she be willing to date?</li>
 </ol>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb55-1" data-line-number="1"><span class="co">## </span><span class="al">NOTE</span><span class="co">: uncomment and replace NULL with your answer; do not change the name of the variable!</span></a>
-<a class="sourceLine" id="cb55-2" data-line-number="2">p_taller_m &lt;-<span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">181.12</span>, <span class="fl">176.2</span>, <span class="fl">6.748</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## <span class="al">NOTE</span>: uncomment and replace NULL with your answer; do not change the name of the variable!
+p_taller_m &lt;-<span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">181.12</span>, <span class="fl">176.2</span>, <span class="fl">6.748</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</code></pre></div>
 <ol start="3" style="list-style-type: decimal">
-<li>Out of 100,000 16-24 y.o. Scotswomen, how many would you predict
-would meet the height eligibility requirement to join the Royal
-Navy (at least 151.5cm tall)?</li>
+<li>Out of 100,000 16-24 y.o. Scotswomen, how many would you predict would meet the height eligibility requirement to join the Royal Navy (at least 151.5cm tall)?</li>
 </ol>
-<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb56-1" data-line-number="1"><span class="co">## </span><span class="al">NOTE</span><span class="co">: uncomment and replace NULL with your answer; do not change the name of the variable!</span></a>
-<a class="sourceLine" id="cb56-2" data-line-number="2">n_sailors &lt;-<span class="st"> </span><span class="dv">100000</span> <span class="op">*</span><span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">151.5</span>, <span class="fl">163.8</span>, <span class="fl">6.931</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## <span class="al">NOTE</span>: uncomment and replace NULL with your answer; do not change the name of the variable!
+n_sailors &lt;-<span class="st"> </span><span class="dv">100000</span> <span class="op">*</span><span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">151.5</span>, <span class="fl">163.8</span>, <span class="fl">6.931</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</code></pre></div>
 <div id="qnorm---the-quartile-function" class="section level3">
 <h3><span class="header-section-number">8.6.1</span> <strong><code>qnorm()</code></strong> - The Quartile Function</h3>
-<p>Let’s use our height example to work with qnorm:</p>
+<p>Let's use our height example to work with qnorm:</p>
 <ol start="4" style="list-style-type: decimal">
-<li>How tall would a 16-24 y.o. Scotsman have to be in order to be in
-the top 5% of the height distribution for Scotsmen in his age
-group?</li>
+<li>How tall would a 16-24 y.o. Scotsman have to be in order to be in the top 5% of the height distribution for Scotsmen in his age group?</li>
 </ol>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb57-1" data-line-number="1"><span class="co">## </span><span class="al">NOTE</span><span class="co">: uncomment and replace NULL with your answer; do not change the name of the variable!</span></a>
-<a class="sourceLine" id="cb57-2" data-line-number="2">height_cutoff &lt;-<span class="st"> </span><span class="kw">qnorm</span>(.<span class="dv">05</span>, <span class="fl">176.2</span>, <span class="fl">6.748</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## <span class="al">NOTE</span>: uncomment and replace NULL with your answer; do not change the name of the variable!
+height_cutoff &lt;-<span class="st"> </span><span class="kw">qnorm</span>(.<span class="dv">05</span>, <span class="fl">176.2</span>, <span class="fl">6.748</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</code></pre></div>
 
 </div>
 </div>
@@ -435,10 +396,9 @@ gitbook.start({
 "google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"],
-"instapaper": false
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -446,6 +406,10 @@ gitbook.start({
 "size": 2
 },
 "edit": {
+"link": null,
+"text": null
+},
+"history": {
 "link": null,
 "text": null
 },
@@ -463,8 +427,8 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');
     script.src = src;

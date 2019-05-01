@@ -7,22 +7,26 @@ Watch this video of Dr Simine Vazire talking about Open Science and why it is an
 [Intro to open science](https://www.youtube.com/watch?v=1rFWeTryiW4&feature=youtu.be)
 
 ## In-class activity
-Replication task demonstrating variability in processing and reproducing instructions to highlight replicability debate and introduce dataset.
+```{block, type="info"}
+We wanted to give students a little more context about the importance of taking an open and replicable position with their research so provided a simple drawing task where each of them had to follow the instructions below. The output is varied as our staff attempts show! This was lab 1 so the students had not been introduced to R yet but the issues and debate was being presented. 
+```
+
 
 Replication Task : In your groups please complete these steps on a bit of paper.
-* Draw a square
-* Draw another square at 15 degree angle to the bottom of the 1st square 
-* Draw 4 lines down from each corner of the 2nd square
-* Draw a circle next to 2nd square
-* Draw a smaller circle on top of first circle 
-* Draw upward line from side of 1st circle
-* Draw 2 triangles on top of 2nd circle
+
+*Draw a square
+*Draw another square at 15 degree angle to the bottom of the 1st square
+*Draw 4 lines down from each corner of the 2nd square
+*Draw a circle next to 2nd square
+*Draw a smaller circle on top of first circle 
+*Draw upward line from side of 1st circle
+*Draw 2 triangles on top of 2nd circle
 
 Two examples of different interpretations of task:
 ![Interpretation 1](images/Holly_rep.jpg)
 ![Interpretation 2](images/Aliyah.jpg)
 
-
+This is the data we will use this semester to develop our skills and knowledge. Familiarise yourself with the data and the study it comes from. What are the variables? Can you think of a research question that you would be interested in answering with this data?
 
 Dataset is from Woodworth et al. (2018) details of which can be found here [Web-based Positive Psychology Interventions: A Reexamination of Effectiveness](https://openpsychologydata.metajnl.com/articles/10.5334/jopd.35/)
 
