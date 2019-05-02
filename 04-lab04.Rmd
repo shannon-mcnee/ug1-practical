@@ -8,8 +8,62 @@ Interesting twitter conversation between Prof Lisa Debruine and Dr Lisa Debruine
 
 ## In-class activity
 
+### Getting our data ready to work with
 
-## Post-class activity
+Today in the lab we will be working with our data to generate a plot of 2 variables from the Woodworth et al data. Before we get to generate our plot, we still need to work through the steps to get our data in the shape we need it to be in for our particular question. You have done these steps before so go back to the relevant script and use that to guide you through. Can you remember when we did this? 
+
+OK, so what is our first step? Yup, thats right, we need to tell RStudio where to find all the files we need and pull them in ready for work. Let's go back to labs 2 and 3 to use our previous script to fill in the code in a new script:
+
+Task 1: Open up tidyverse and read in data
+
+```{r T1 getting started, echo=FALSE}
+library(tidyverse)
+dat <- read_csv ('ahi-cesd.csv')
+pinfo <- read_csv('participant-info.csv')
+all_dat <- inner_join(dat, pinfo, by='id', 'intervention')
+summarydata <- select(all_dat, ahiTotal, cesdTotal, sex, age, educ, income, occasion, elapsed.days)
+```
+
+Task 2. Select the columns all_dat, ahiTotal, cesdTotal, sex, age, educ, income, occasion, elapsed.days from the data and creat variable ```summarydata```. 
+```{r, T2}
+summarydata <- select(all_dat, ahiTotal, cesdTotal, sex, age, educ, income, occasion, elapsed.days)
+```
+
+Task 3. Arrange the data in the variable created above (```summarydata```) by ahiTotal with lowest score first. 
+```{r, T3}
+ahi_asc <- arrange(summarydata, by = ahiTotal)
+```
+
+Task 4. Filter the data ```ahi_desc``` by taking out those who are over 65 years of age.  
+```{r, T4}
+age_65max <- filter(ahi_asc, age < 65)
+```
+
+Task 5. Group the data stored in the variable ```age_65max``` by sex, and store it in ```data_sex```. 
+Then, use summarise to create a new variable ```data_median```, which calculates the median ahiTotal score in this grouped data and assign it a table head called ```median_score```.
+*(Hint: if you're stuck, see .......).*
+```{r T5}
+data_sex <- group_by(age_65max, sex)
+data_median <- summarise(data_sex, median_score = median(ahiTotal))
+```
+
+Task 6. Use mutate to create a new column called Happiness which categorises participants based on whether they score above or below the median ahiTotal score.
+```{r T6}
+happy <- mutate(data_sex, Happiness = (ahiTotal > 73))
+```
+
+### We are now at the point where we can create a plot showing us some data. Why should we do this? This is an interesting thread from our colleagues Dr Guillaume Rousselet and Prof Lisa DeBruine on the reasons why we should use plots and the benefits of using ggplot, the package we will use today in RStudio, to create our plot: https://twitter.com/robustgar/status/1025342313004974080
+And as Grolemund and Wickham tells us 
+'Visualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data. A good visualisation might also hint that you’re asking the wrong question, or you need to collect different data. Visualisations can surprise you, but don’t scale particularly well because they require a human to interpret them.` 
+http://r4ds.had.co.nz/introduction.html
+
+```{r, create plot}
+ggplot(data = age_65max) + 
+  geom_point(mapping = aes(x = ahiTotal , y = cesdTotal), col="purple") 
+```
+
+## Great job! You have now worked with the essential basics of good practice in data wrangling! To show us how you have mastered this complete the assessment and submit by 12pm 1 week from your lab. 
 
 
 ## Additional resources 
+Our students were also supported by a short video made by Heather on ggplot. 
