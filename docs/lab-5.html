@@ -5,27 +5,27 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chapter 5 Lab 5 | ug1-practical</title>
-  <meta name="description" content="Chapter 5 Lab 5 | ug1-practical-materials">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <title>ug1-practical</title>
+  <meta name="description" content="ug1-practical-materials">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
-  <meta property="og:title" content="Chapter 5 Lab 5 | ug1-practical" />
+  <meta property="og:title" content="ug1-practical" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="Chapter 5 Lab 5 | ug1-practical-materials" />
+  <meta property="og:description" content="ug1-practical-materials" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Lab 5 | ug1-practical" />
+  <meta name="twitter:title" content="ug1-practical" />
   
-  <meta name="twitter:description" content="Chapter 5 Lab 5 | ug1-practical-materials" />
+  <meta name="twitter:description" content="ug1-practical-materials" />
   
 
 <meta name="author" content="psyTeachR">
 
 
-<meta name="date" content="2019-05-01">
+<meta name="date" content="2019-05-02">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,7 +36,6 @@
 <link rel="next" href="lab-6.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
@@ -51,45 +50,71 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<link rel="stylesheet" href="include/psyteachr.css" type="text/css" />
-<link rel="stylesheet" href="include/style.css" type="text/css" />
+<link rel="stylesheet" href="include\psyteachr.css" type="text/css" />
+<link rel="stylesheet" href="include\style.css" type="text/css" />
 </head>
 
 <body>
@@ -127,8 +152,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="4" data-path="lab-4.html"><a href="lab-4.html"><i class="fa fa-check"></i><b>4</b> Lab 4</a><ul>
 <li class="chapter" data-level="4.1" data-path="lab-4.html"><a href="lab-4.html#pre-class-activity-3"><i class="fa fa-check"></i><b>4.1</b> Pre-class activity</a></li>
-<li class="chapter" data-level="4.2" data-path="lab-4.html"><a href="lab-4.html#in-class-activity-3"><i class="fa fa-check"></i><b>4.2</b> In-class activity</a></li>
-<li class="chapter" data-level="4.3" data-path="lab-4.html"><a href="lab-4.html#post-class-activity-1"><i class="fa fa-check"></i><b>4.3</b> Post-class activity</a></li>
+<li class="chapter" data-level="4.2" data-path="lab-4.html"><a href="lab-4.html#in-class-activity-3"><i class="fa fa-check"></i><b>4.2</b> In-class activity</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="lab-4.html"><a href="lab-4.html#getting-our-data-ready-to-work-with"><i class="fa fa-check"></i><b>4.2.1</b> Getting our data ready to work with</a></li>
+<li class="chapter" data-level="4.2.2" data-path="lab-4.html"><a href="lab-4.html#we-are-now-at-the-point-where-we-can-create-a-plot-showing-us-some-data.-why-should-we-do-this-this-is-an-interesting-thread-from-our-colleagues-dr-guillaume-rousselet-and-prof-lisa-debruine-on-the-reasons-why-we-should-use-plots-and-the-benefits-of-using-ggplot-the-package-we-will-use-today-in-rstudio-to-create-our-plot-httpstwitter.comrobustgarstatus1025342313004974080"><i class="fa fa-check"></i><b>4.2.2</b> We are now at the point where we can create a plot showing us some data. Why should we do this? This is an interesting thread from our colleagues Dr Guillaume Rousselet and Prof Lisa DeBruine on the reasons why we should use plots and the benefits of using ggplot, the package we will use today in RStudio, to create our plot: <span>https://twitter.com/robustgar/status/1025342313004974080</span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="lab-4.html"><a href="lab-4.html#great-job-you-have-now-worked-with-the-essential-basics-of-good-practice-in-data-wrangling-to-show-us-how-you-have-mastered-this-complete-the-assessment-and-submit-by-12pm-1-week-from-your-lab."><i class="fa fa-check"></i><b>4.3</b> Great job! You have now worked with the essential basics of good practice in data wrangling! To show us how you have mastered this complete the assessment and submit by 12pm 1 week from your lab.</a></li>
 <li class="chapter" data-level="4.4" data-path="lab-4.html"><a href="lab-4.html#additional-resources"><i class="fa fa-check"></i><b>4.4</b> Additional resources</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="lab-5.html"><a href="lab-5.html"><i class="fa fa-check"></i><b>5</b> Lab 5</a><ul>
@@ -148,7 +176,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.2.4" data-path="lab-6.html"><a href="lab-6.html#task-4---question-format"><i class="fa fa-check"></i><b>6.2.4</b> Task 4 - Question format</a></li>
 <li class="chapter" data-level="6.2.5" data-path="lab-6.html"><a href="lab-6.html#task-5---scores"><i class="fa fa-check"></i><b>6.2.5</b> Task 5 - Scores</a></li>
 <li class="chapter" data-level="6.2.6" data-path="lab-6.html"><a href="lab-6.html#task-6---calculate-aq-scores"><i class="fa fa-check"></i><b>6.2.6</b> Task 6 - Calculate AQ scores</a></li>
-<li class="chapter" data-level="6.2.7" data-path="lab-6.html"><a href="lab-6.html#task-7---calculate-aq-scores-contd"><i class="fa fa-check"></i><b>6.2.7</b> Task 7 - Calculate AQ scores cont'd</a></li>
+<li class="chapter" data-level="6.2.7" data-path="lab-6.html"><a href="lab-6.html#task-7---calculate-aq-scores-contd"><i class="fa fa-check"></i><b>6.2.7</b> Task 7 - Calculate AQ scores cont’d</a></li>
 <li class="chapter" data-level="6.2.8" data-path="lab-6.html"><a href="lab-6.html#task-8---calculate-aq-scores-efficiently"><i class="fa fa-check"></i><b>6.2.8</b> Task 8 - Calculate AQ scores efficiently</a></li>
 <li class="chapter" data-level="6.2.9" data-path="lab-6.html"><a href="lab-6.html#task-9---using-ggplot2-make-a-distribution-of-the-overall-aq-scores-by-producing-a-histogram-from-aq_scores."><i class="fa fa-check"></i><b>6.2.9</b> Task 9 - Using ggplot2, make a distribution of the overall AQ scores by producing a histogram from aq_scores.</a></li>
 </ul></li>
@@ -213,12 +241,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="the-autism-quotient-aq" class="section level2">
 <h2><span class="header-section-number">5.3</span> The Autism Quotient (AQ)</h2>
-<p>To illustrate these concepts, we will use some actual survey data that was collected online using SurveyMonkey.com (Note: the data have been slightly cleaned up to make things a bit simpler; in reality, the data files were even messier than it appears!) For this research project, prospective participants completed the short 10-item version of the Autism-Spectrum Quotient (AQ) (Baron-Cohen, Wheelwright, Skinner, Martin, &amp; Clubley, 2001), which is designed to measure autistic traits in adults. The data from Survey Monkey was downloaded as a .csv file, a common text format that you should be familiar with by now.</p>
+<p>To illustrate these concepts, we will use some actual survey data that was collected online using SurveyMonkey.com (Note: the data have been slightly cleaned up to make things a bit simpler; in reality, the data files were even messier than it appears!)
+For this research project, prospective participants completed the short 10-item version of the Autism-Spectrum Quotient (AQ) (Baron-Cohen, Wheelwright, Skinner, Martin, &amp; Clubley, 2001), which is designed to measure autistic traits in adults. The data from Survey Monkey was downloaded as a .csv file, a common text format that you should be familiar with by now.</p>
 <p>Table 1: The ten items on the AQ-10.</p>
-<table style="width:25%;">
+<table>
 <colgroup>
-<col width="8%" />
-<col width="16%" />
+<col width="31%" />
+<col width="68%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -269,9 +298,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </tr>
 </tbody>
 </table>
-<p>Responses to each item were measured on a four-point scale: Definitely Disagree, Slightly Disagree, Slightly Agree, Definitely Agree. To avoid response bias, each question is scored according to one of two different question formats. For questions 1, 7, 8, and 10, a point is assigned for agreement (either “Slightly Agree” or “Definitely Agree”) and zero otherwise. We will call this format “F” (for forward). The remaining questions are reverse coded (format “R”): a point is assigned for disagreement (“Slightly Disagree” or “Definitely Disagree”) and zero otherwise.</p>
-<p>The AQ for each participant is just the total points across all 10 questions. The higher the AQ score, the more ’autistic traits’ they are assumed to exhibit. Our goal is to calculate an AQ score for each participant in the dataset. Download the data here: <a href="http://talklab.psy.gla.ac.uk/L1_labs/lab_4/prep/responses.csv">AQ Data</a></p>
-<p>The data should look like this: <img src="widedata.png" alt="Data" /></p>
+<p>Responses to each item were measured on a four-point scale: Definitely Disagree, Slightly Disagree, Slightly Agree, Definitely Agree.
+To avoid response bias, each question is scored according to one of two different question formats. For questions 1, 7, 8, and 10, a point is assigned for agreement (either “Slightly Agree” or “Definitely Agree”) and zero otherwise. We will call this format “F” (for forward). The remaining questions are reverse coded (format “R”): a point is assigned for disagreement (“Slightly Disagree” or “Definitely Disagree”) and zero otherwise.</p>
+<p>The AQ for each participant is just the total points across all 10 questions. The higher the AQ score, the more ’autistic traits’ they are assumed to exhibit. Our goal is to calculate an AQ score for each participant in the dataset. Download the data here:
+<a href="http://talklab.psy.gla.ac.uk/L1_labs/lab_4/prep/responses.csv">AQ Data</a></p>
+<p>The data should look like this:
+<img src="widedata.png" alt="Data" /></p>
 <p>To preserve anonymity, each participant was given a unique number, coded by the variable Id, shown in the first column of the table. The rest of the columns contain the responses associated with that participant for each of the 10 question (Q1, Q2, Q3, …, Q10).</p>
 <p>This data format is known as wide format: each unit of analysis (participant) forms a single row in the table, and each observation on that unit forms a separate column. Wide format is often convenient for data entry, but for reasons that will soon become apparent, we will find this format inconvenient for the task of scoring the responses.</p>
 </div>
@@ -587,22 +619,22 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>pinfo.csv : participant information (Sex, Age, etc.)</li>
 </ul>
 <p>Make a new R script, and make sure to set your working directory where those files can be located and load in tidyverse at the top of your R script then load in the three first files.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">responses &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;files/responses.csv&quot;</span>) <span class="co"># survey responses</span>
-qformats &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;files/qformats.csv&quot;</span>) <span class="co"># question formats</span>
-scoring &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;files/scoring.csv&quot;</span>) <span class="co"># scoring info</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" data-line-number="1">responses &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;files/responses.csv&quot;</span>) <span class="co"># survey responses</span></a>
+<a class="sourceLine" id="cb23-2" data-line-number="2">qformats &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;files/qformats.csv&quot;</span>) <span class="co"># question formats</span></a>
+<a class="sourceLine" id="cb23-3" data-line-number="3">scoring &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;files/scoring.csv&quot;</span>) <span class="co"># scoring info</span></a></code></pre></div>
 <p>Whenever you load in data, it is always a good idea to have a quick look to make sure things make sense (using glimpse(), View() or just clicking on them in the environment). For example, we can view the responses table by just typing the name responses in the console. Do that now.</p>
 <p>Now we can use R to transform our data from wide to long. We will use the function gather() function but we will do it for one participant just now. Some info on this gather() function can be found here <a href="https://rpubs.com/bradleyboehmke/data_wrangling">What does gather() do?</a>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">rlong &lt;-<span class="st"> </span><span class="kw">gather</span>(responses, Question, Response, Q1<span class="op">:</span>Q10)</code></pre></div>
-<p>What this means is that we have created a tibble called rlong using the function gather. We want gather to look in a previously craeted tibble called responses and then pull out the variables 'Question' and 'Response' for questions 1 to 10. Q1:Q10 is just a convenient shorthand for Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10. We have now created a tibble with 660 observations over 3 variables; 10 observations per 66 participants on 3 variables. Let's make it simpler just now and only use one participant. We can do that by using filter() which you used last semester and creating a new tibble called rlong_16.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">rlong_<span class="dv">16</span> &lt;-<span class="st"> </span><span class="kw">filter</span>(rlong, Id <span class="op">==</span><span class="st"> </span><span class="dv">16</span>)</code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" data-line-number="1">rlong &lt;-<span class="st"> </span><span class="kw">gather</span>(responses, Question, Response, Q1<span class="op">:</span>Q10)</a></code></pre></div>
+<p>What this means is that we have created a tibble called rlong using the function gather. We want gather to look in a previously craeted tibble called responses and then pull out the variables ‘Question’ and ‘Response’ for questions 1 to 10. Q1:Q10 is just a convenient shorthand for Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10. We have now created a tibble with 660 observations over 3 variables; 10 observations per 66 participants on 3 variables. Let’s make it simpler just now and only use one participant. We can do that by using filter() which you used last semester and creating a new tibble called rlong_16.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" data-line-number="1">rlong_<span class="dv">16</span> &lt;-<span class="st"> </span><span class="kw">filter</span>(rlong, Id <span class="op">==</span><span class="st"> </span><span class="dv">16</span>)</a></code></pre></div>
 <p>We should now have a tibble with 10 observations of 3 variables.</p>
 <p>OK, the next step: match each question with a format F or R. We have this information in the table qformats.</p>
 <p>So how do we combine these two tables? We want to match up the tables on the column Question. We can do this using an inner_join(). Try it and see what happens:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">rlong2 &lt;-<span class="st"> </span><span class="kw">inner_join</span>(rlong_<span class="dv">16</span>, qformats, <span class="st">&quot;Question&quot;</span>)</code></pre></div>
-<p>Magic! The inner_join(), in effect added a new column to rlong which had the format of each question. Let’s look at the function call again....</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" data-line-number="1">rlong2 &lt;-<span class="st"> </span><span class="kw">inner_join</span>(rlong_<span class="dv">16</span>, qformats, <span class="st">&quot;Question&quot;</span>)</a></code></pre></div>
+<p>Magic! The inner_join(), in effect added a new column to rlong which had the format of each question. Let’s look at the function call again….</p>
 <p>The first two arguments to inner_join(), rlong and qformats, are the names of the tibbles that we want to join together. The next argument tells R how to join them, by Question. What the inner join does is match up rows in the two tables where both tables have the same value for the field named in the third argument, “Question”; it then combines the columns from the two tables, copying rows where necessary. To state it more simply, what it does, in effect, is the following: For each row in rlong, it checks the value of the column Question, and looks for rows with the same value in qformats, and then essentially combines all of the other columns in the two tables for these matching rows. If there are unmatching values, the rows get dropped. The inner_join() is one of the most useful and time-saving operations in data wrangling so keep ptracticing as it will keep reappearing time after time.</p>
 <p>Now that we have matched up each question with its corresponding format, we can now “look up” the corresponding scores in the scoring table based on the format and the response. So what we need to do is to combine information in our new table, rlong2, and the scoring table. We do this, once again, with an inner join, and we will store the result in a new variable, rscores.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">rscores &lt;-<span class="st"> </span><span class="kw">inner_join</span>(rlong2, scoring, <span class="kw">c</span>(<span class="st">&quot;QFormat&quot;</span>, <span class="st">&quot;Response&quot;</span>))</code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" data-line-number="1">rscores &lt;-<span class="st"> </span><span class="kw">inner_join</span>(rlong2, scoring, <span class="kw">c</span>(<span class="st">&quot;QFormat&quot;</span>, <span class="st">&quot;Response&quot;</span>))</a></code></pre></div>
 <p>So here we have created a new tibble called rscores using inner_join to join rlong2 and scoring using columns QFormat and Response and you are at a point where you are ready to calculate the AQ scores for participant 16. You have used the function to calculate the total last semester. Can you think where? Look back in your scripts and .Rmd files to remember where you have used this and how you can use it to calculate the total for participant 16.</p>
 
 </div>
@@ -718,9 +750,10 @@ gitbook.start({
 "google": false,
 "linkedin": false,
 "weibo": false,
-"instapaper": false,
+"instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"],
+"instapaper": false
 },
 "fontsettings": {
 "theme": "white",
@@ -728,10 +761,6 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": null,
-"text": null
-},
-"history": {
 "link": null,
 "text": null
 },
@@ -749,8 +778,8 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');
     script.src = src;

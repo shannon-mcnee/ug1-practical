@@ -2,7 +2,7 @@
 --- 
 title: "ug1-practical"
 author: "psyTeachR"
-date: "2019-05-01"
+date: "2019-05-02"
 site: "bookdown::bookdown_site"
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -23,7 +23,7 @@ This resource outlines the structure and content of our level 1 practical course
 
 3. Live coding is an important part of our teaching. We structure our classes with a staff member leading with support from two Graduate Teaching Assistants (GTAs). This enables the staff member to lead the class through the content while the GTAs can ensure the individual students are being challenged and supported adequately. The structure of skill building over labs supports this mode of teaching with the focus being on what each component of the code enables us to do rather than memorising code. Additional lab activites, such as the building of a portfolio over each semester, aims to encourage our students to focus on the understanding of the aim of the task the obtaining the code rather than memorising code only. 
 
-*The overall goal for our students in our year 1 Psychology labs*
+**The overall goal for our students in our year 1 Psychology labs**
 
 *To understand the current state of psychological science and what Open Science is as well as its importance
 

@@ -18,8 +18,8 @@ Task 1: Open up tidyverse and read in data
 
 ```{r T1 getting started, echo=FALSE}
 library(tidyverse)
-dat <- read_csv ('ahi-cesd.csv')
-pinfo <- read_csv('participant-info.csv')
+dat <- read_csv ('files/ahi-cesd.csv')
+pinfo <- read_csv('files/participant-info.csv')
 all_dat <- inner_join(dat, pinfo, by='id', 'intervention')
 summarydata <- select(all_dat, ahiTotal, cesdTotal, sex, age, educ, income, occasion, elapsed.days)
 ```
