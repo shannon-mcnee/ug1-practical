@@ -1,7 +1,7 @@
 # Lab 2
 
 ```{block, type="info"}
-This is the first lab that the students are introduced to R. The important point here is that R is introduced as a tool which will support their open science practices such as replicability and follows on from discussion in lab 1 about working with data effectively.
+This is the first lab that the students are introduced to R. The important point here is that R is introduced as a tool which will support their open science practices such as replicability and follows on from discussion in lab 1 about working with data effectively. We presented the large messy data set in lab 1 highlighting the nature of work that students need to start thinking about before introducing R as the solution in lab 2.
 ```
 
 ## Pre-class activity

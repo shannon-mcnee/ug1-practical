@@ -1,5 +1,8 @@
 # Lab 4 
 
+```{block, type="info"}
+This is the last lab of semester 1 where the students work with data. Lab 5, the last lab of the semester, is where they present their reflections on what they would tell their fresher selves facilitating reflection on how far their skills have come in just 10 weeks. In this lab, lab 4, the students are again loading in data, using the tidyverse verbs and are now generating a plot. Our students were also supported by a short video made by the course lead on ggplot. 
+```
 
 ## Pre-class activity
 Interesting twitter conversation between Prof Lisa Debruine and Dr Lisa Debruine on the importance of visualising data which you will be learning about in this lab 
@@ -62,8 +65,4 @@ ggplot(data = age_65max) +
   geom_point(mapping = aes(x = ahiTotal , y = cesdTotal), col="purple") 
 ```
 
-## Great job! You have now worked with the essential basics of good practice in data wrangling! To show us how you have mastered this complete the assessment and submit by 12pm 1 week from your lab. 
-
-
-## Additional resources 
-Our students were also supported by a short video made by Heather on ggplot. 
+Great job! You have now worked with the essential basics of good practice in data wrangling! To show us how you have mastered this complete the assessment and submit by 12pm 1 week from your lab. 

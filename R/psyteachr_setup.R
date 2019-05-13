@@ -67,7 +67,7 @@ glossary <- function(term, display = NULL, shortdef = "", link = TRUE) {
   
   if (link) {
     paste0("<a class='glossary' target='_blank' title='", shortdef, 
-           "' href='", url, "#", lcterm, "'>", display, "</a>")
+         "' href='", url, "#", lcterm, "'>", display, "</a>")
   } else {
     paste0("<a class='glossary' title='", shortdef, "'>", display, "</a>")
   }
@@ -101,3 +101,4 @@ psyteachr_colours <- function(vals = 1:6) {
   unname(ptrc[vals])
 }
 psyteachr_colors <- psyteachr_colours
+

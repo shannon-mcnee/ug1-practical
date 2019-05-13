@@ -2,7 +2,7 @@
 --- 
 title: "ug1-practical"
 author: "psyTeachR"
-date: "2019-05-02"
+date: "2019-05-13"
 site: "bookdown::bookdown_site"
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -30,3 +30,7 @@ This resource outlines the structure and content of our level 1 practical course
 *To be clear on the importance of being confident and competent in data management 
 
 *To be confident and competent at using RStudio as a tool to acheive good data management skills 
+
+<div class="info">
+<p>We have not shared the assessments for the labs but they are closely related to the in-class activities so these can be used as assessment templates too with code remaining similar to in-class but data or variables of interest changing. Where we have had formative or optional tasks for students to complete these will be listed under post-lab activities.</p>
+</div>
