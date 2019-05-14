@@ -1,20 +1,22 @@
 # Lab 1 
 
 ```{block, type="info"}
-In this lab we will be introduced to the skills we will develop over the next year and beyond. This lab will introduce Open Science and why it is relevant to your development as a Psychologist. We will meet our groups and the staff that will be leading our labs and who we will get to know well over these two semesters. We can't wait to get started!
+In this lab we will be introduced to the skills we will develop over the next year and beyond. This lab will introduce open science and why it is relevant to your development as a Psychologist. We will meet our groups and the staff that will be leading our labs and who we will get to know well over these two semesters. We can't wait to get started!
 ```
 
 ## Pre-class activity
-Watch this video of Dr Simine Vazire talking about Open Science and why it is an important concept for us to understand in Psychology. 
+Watch this video of Dr Simine Vazire talking about open science and why it is an important concept for us to understand in Psychology.  
+<br>
 [Intro to open science](https://www.youtube.com/watch?v=1rFWeTryiW4&feature=youtu.be)
 
-## In-class activity
+## In-class activities
 ```{block, type="info"}
-We wanted to give students a little more context about the importance of taking an open and replicable position with their research so provided a simple drawing task where each of them had to follow the instructions below. The output is varied as our staff attempts show! This was lab 1 so the students had not been introduced to R yet but the issues and debate was being presented. 
+We want to give students more context about the importance of taking an open and replicable position with their research so we provide a simple drawing task where each of them has to follow the instructions below. The output is varied as prevoius staff attempts show! This activity is included in lab 1 so students have not yet been introduced to R but rather are learning abdout the issues and current debates in the field. 
 ```
 
+### Activity 1: Replication task  
 
-Replication Task : In your groups please complete these steps on a bit of paper.
+In your groups please complete these steps on a bit of paper.
 
 *Draw a square
 
@@ -36,12 +38,15 @@ Two examples of different interpretations of this task:
 
 <img src="images/Aliyah.jpg" width="300px" />
 
-This is the data we will use this semester to develop our skills and knowledge. Familiarise yourself with the data and the study it comes from. What are the variables? Can you think of a research question that you would be interested in answering with this data?
+### Activity 2: Getting to know the data
 
-Dataset is from Woodworth et al. (2018) details of which can be found here [Web-based Positive Psychology Interventions: A Reexamination of Effectiveness](https://openpsychologydata.metajnl.com/articles/10.5334/jopd.35/)
+This semester we will use the same dataset each week to develop our skills and knowledge. The dataset is from Woodworth et al. (2018) details of which can be found here [Web-based Positive Psychology Interventions: A Reexamination of Effectiveness](https://openpsychologydata.metajnl.com/articles/10.5334/jopd.35/).
 
-## Post-class activity
-Formative task where the students have to develop a research question relative to the data and a plan of the steps needed to wrangle the data. RStudio has not been introduced to them yet but open science and replicability has. The aim of this exercise is for students to work with real data which is big and messy so they realise the importance of having an effective tool for handling data. 
+Familiarise yourself with the data and the study it comes from. What are the variables? Can you think of a research question that you would be interested in answering with this data?
+
+```{block, type = "info"}
+**Post class activity** This is a formative task where the students have to familiarise themselves with the data and develop a research question relative to that data specifically whilst thinking through what they would need the data to look like before analysing. For example, they may look at the data and be interested in seeing there was an effect of intervention type on happiness score so, in their groups, they would start to think about how they could wrangle their data to make it suitable for an appropriate analysis. Our thinking behind this was that by understanding the problem students will understand the need for an effective tool to help them. Although RStudio has not been introduced to them yet, open science and replicability has. We are presenting the challenge of big, messy real data before we present the tool that can meet this challenge - R. 
+```
 
 ## Additional resources around open science and replicability
 [Is most published research wrong?](https://youtu.be/42QuXLucH3Q)

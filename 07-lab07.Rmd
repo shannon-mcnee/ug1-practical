@@ -1,12 +1,16 @@
 # Lab 7
 
-## Preclass activity
+```{block, type = "info"}
+Lab 7 and 8 introduce the students to probability. Firstly, in lab 7, we introduce binomial probability and then in lab 8 we introduce normal distribution probability. Again, we used an informal video by the course lead to suppport students in understanding the theoretical concepts behind probability. 
+```
 
-The activity below was supported by a short video by Heather. 
+## Pre-class activity
 
-## Probability and Probability Distributions
+Watch the video on probability made by Heather where she talks through why learning about probability is relevant and how we go about calculating probabilities of events. 
 
-The aim of Lab 3 is to introduce concepts and R/RStudio functions that you can use to:
+### Probability and Probability Distributions
+
+The aim of Lab 7 is to introduce concepts and R/RStudio functions that you can use to:
 
 1. calculate probabilities 
 2. create probability distributions
@@ -26,7 +30,6 @@ How you tackle probability depends on the type of data/variables you are working
 
 **Continuous** data on the other hand can take any value. For example, we can measure age on a continuous scale (e.g. we can have an age of 26.55 years), also reaction time or the distance you travel to university every day. It can be broken into **interval** or **ratio** data; but more of that another time.
 
-
 ### Simple probability calculations
 Today, we are going to run you through the concepts of probability calculations. 
 
@@ -37,7 +40,6 @@ For example, what is the probability of randomly drawing your name out of a hat 
 ```{r Q1}
 1/12
 ```
-
 
 ### Joint probability
 Describing the probability of single events, such as a coin flip or rolling a six is easy, but more often than not we are interested in the probability of a collection of events, such as the number of heads out of 10 flips or the number of sixes in 100 rolls. For simplicity, let’s take the example of a coin flip.
@@ -99,7 +101,6 @@ Each of these numbers represents the number of heads as the outcome of 50 lots o
 
 Note that we can estimate the probability of each of the outcomes (0, 1, 2, 3, 4 heads) by counting them up and dividing through by the number of experiments. We will do this by putting the experiments in a data_frame() and then using count().
 
-
 ``` {r coin_distribution}
 data50 <- data_frame(heads = heads50) %>%   # convert to a data frame 
                 group_by(heads) %>%           # group by number of possibilities
@@ -153,32 +154,31 @@ data10K %>%
   summarise(p2 = sum(p))
 ```
 
-
 You can add probabilities for various outcomes together as long as the outcomes are mutually exclusive, that is, when one outcome occurs, the others can't occur. For this coin flipping example, this is obviously the case: you can't simultaneously get exactly two and exactly three heads as the outcome of a single experiment. However, be aware that you can't simply add probabilities together when the events in question are not mutually exclusive: for example, the probability of the coin landing heads up, and it landing with the image of the head being in a particular orientation are not mutually exclusive, and can't be simply added together.
 
 The probabilities we got from Monte Carlo simulation are just estimates; we need something more definitive.
 
-## Theoretical probability distributions
-Recall that probability is not much more sophisticated than counting and dividing. We are now going to move this forward by looking at binomial distributions in lab 3 and normal distributions in lab 4. See you in lab 3!
+### Theoretical probability distributions
+Recall that probability is not much more sophisticated than counting and dividing. We are now going to move this forward by looking at binomial distributions in lab 7 and normal distributions in lab 8. See you in lab 7!
 
 
 $$p = \frac{number \  of  \ ways \ the \ event \ could \  arise}{number \ of \ possible \ outcomes}$$
 
 ## Inclass activity
 
-## Monte Carlo simulations
+### Monte Carlo simulations
 Before we move on make sure you are comfortable with Monte Carlo simulation that we learnt about in the prep materials. Remember, the staff and GTAs are in the lab to support your learning so if in doubt just ask to go through it. These are concepts that need some work so take the time get comfortable with them as that will put you in good stead moving forward with this lab and lab 4. 
 
-## The Binomial Distribution - Creating a Discrete Distribution
+### The Binomial Distribution - Creating a Discrete Distribution
 So far we have learnt how probabilities and distributions work using the simple probability calculation. However, if we had wanted to calculate the probability of 8 heads from 10 coin flips we don't have to go through this entire procedure each time. Instead, because we have a dichotomous outcome, heads or tails, we can calculate probabilities using the **binomial distribution** - effectively what you just created. We will walk through some essentials here.
 
 We'll use 3 functions to work with the binomial distribution:
 
-**dbinom** - the density function: gives you the probability of x successes (heads) given the no of trials and probability of success probability on a single trial (here it's 0.5, because we assume we're flipping a fair coin).
+`dbinom()` - the density function: gives you the probability of x successes (heads) given the no of trials and probability of success probability on a single trial (here it's 0.5, because we assume we're flipping a fair coin).
 
-**pbinom** - the distribution function: gives you the cumulative probability of getting a number of successes below a certain cut-off point (e.g. probability of getting 0 to 5 heads out of 10 flips), given the size and the prob. Known as the cumulative probability distribution function or the cumulative density function.
+`pbinom()` - the distribution function: gives you the cumulative probability of getting a number of successes below a certain cut-off point (e.g. probability of getting 0 to 5 heads out of 10 flips), given the size and the prob. Known as the cumulative probability distribution function or the cumulative density function.
 
-**qbinom** - the quantile function: is the inverse of pbinom in that it gives you the x axis value below (and including the value) which the summation of probabilities is greater than or equal to a given probability p, plus given the size and prob.
+`qbinom()` - the quantile function: is the inverse of pbinom in that it gives you the x axis value below (and including the value) which the summation of probabilities is greater than or equal to a given probability p, plus given the size and prob.
 
 
 So let's try these functions out to answer the two questions:
@@ -203,10 +203,11 @@ barplot(dbinom(0:10, 10, 0.5), names.arg = 0:10, xlab = 'Number of Heads', ylab 
 ```
 
 The dbinom (density binom) function takes the format of dbinom(x, size, prob), where the arguments we give are:
-* x the number of ‘heads’ we want to know the probability of. Either a single one, 3 or a series 0:10. In this case it's 5.
-* size the number of trials (flips) we are doing; in this case, 10 flips.
-* prob the probability of ‘heads’ on one trial. Here chance is 50-50 which as a probability we state as 0.5 or .5
+*x the number of ‘heads’ we want to know the probability of. Either a single one, 3 or a series 0:10. In this case it's 5.
 
+*size the number of trials (flips) we are doing; in this case, 10 flips.
+
+*prob the probability of ‘heads’ on one trial. Here chance is 50-50 which as a probability we state as 0.5 or .5
 
 OK, question  number 2....What is the probability of getting at most 2 heads on 10 flips? 
 This time we use **pbinom** as we want to know the **cumulative probability** of getting a maximum of 2 heads from 10 coin flips so we have set a cut-off point of 2 but we still have a probability of getting a heads of 0.5.

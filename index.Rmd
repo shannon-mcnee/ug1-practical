@@ -27,7 +27,7 @@ This resource outlines the structure and content of our level 1 practical course
 
 2. The assessment enables the students to demonstrate their competency of the skills learnt in class. However, we take the perspective of skills develop through practice therefore each assessment builds on the work not only completed in the associated lab but provides an opportunity to demomstrate skill acquisition of skills learnt to date over the previous labs. Students will have received the solution for the previously attempted lab as a minimum, grade and feedback as well as the solution if feedback and grade turnaround permits, so this is an excellent opportunity for them to demonstrate integration of feedback and related skill development.
 
-3. Live coding is an important part of our teaching. We structure our classes with a staff member leading with support from two Graduate Teaching Assistants (GTAs). This enables the staff member to lead the class through the content while the GTAs can ensure the individual students are being challenged and supported adequately. The structure of skill building over labs supports this mode of teaching with the focus being on what each component of the code enables us to do rather than memorising code. Additional lab activites, such as the building of a portfolio over each semester, aims to encourage our students to focus on the understanding of the aim of the task the obtaining the code rather than memorising code only. 
+3. Live coding is an important part of our teaching. We structure our classes with a staff member leading with support from two Graduate Teaching Assistants (GTAs). This enables the staff member to lead the class through the content while the GTAs can ensure the individual students are being challenged and supported adequately. The structure of skill building over labs supports this mode of teaching with the focus being on what each component of the code enables us to do rather than memorising code. Additional lab activites, such as the building of a portfolio over each semester, aims to encourage our students to focus on the understanding of the aim of the task the obtaining the code rather than memorising code only. The code that you see in the following chapters is the code staff were advised to use when live coding in class. Students were asked to open up a script and then staff live coded whilst talking through each task with GTA support ensuring students were confidently on task.
 
 **The overall goal for our students in our year 1 Psychology labs**
 
@@ -39,4 +39,7 @@ This resource outlines the structure and content of our level 1 practical course
 
 ```{block, type="info"}
 We have not shared the assessments for the labs but they are closely related to the in-class activities so these can be used as assessment templates too with code remaining similar to in-class but data or variables of interest changing. Where we have had formative or optional tasks for students to complete these will be listed under post-lab activities.
+
+You may notice a progression between labs 1 to 4 and labs 5 to 8. This is due to labs 1 to 4 building on skills progressively with associated increase in assessment weighting whilst labs 5 to 8 have a more consistent yet higher weighting. 
 ```
+

@@ -1,7 +1,8 @@
 # Lab 6
 
-## Pre-class activity 
-Students were directed to labs 4 and 5 to recap on skills needed before applying them to this data set introduced in lab 5. 
+```{block, type = "info"}
+This lab builds on the skills developed to date by using tidyverse verbs and ggplot but introduces pipes as an efficient way of joining lines of code. The **pre-class activity** for this lab was to revisit previous labs and assessment feedback to recap on skills developed to date.
+```
 
 ## Inclass activity 
 
@@ -63,10 +64,10 @@ aq_scores <- rscores %>%
 **Checkpoint** Does ```aq_scores``` look the same as ```aq-scores2```?
 
 ### Task 9 - Using ggplot2, make a distribution of the overall AQ scores by producing a histogram from aq_scores.
-```{r Q9, message = FALSE}
+```{r Q9, message = FALSE, fig.cap = 'Autism Quotient Score distribution.'}
 ## TODO: uncomment the following line, and replace it with your answer:
 ggplot(aq_scores, aes(AQ)) + 
   geom_histogram()
 ```
 
-#### Well done! You should use this activity to help you complete the assessment to be submitted 1 week from your lab by 12pm. 
+Well done! You should use this activity to help you complete the assessment to be submitted 1 week from your lab by 12pm. 

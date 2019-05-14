@@ -1,3 +1,37 @@
+--- 
+title: "ug1-practical"
+author: "psyTeachR"
+date: "2019-05-14"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "ug1-practical-materials"
+---
+
+# Overview {-}
+
+Placeholder
+
+
+
+<!--chapter:end:index.Rmd-->
+
+
+# Lab 1 
+
+Placeholder
+
+
+## Pre-class activity
+## In-class activities
+### Activity 1: Replication task  
+### Activity 2: Getting to know the data
+## Additional resources around open science and replicability
+
+<!--chapter:end:01-lab01.Rmd-->
+
 
 # Lab 2
 
@@ -114,3 +148,107 @@ summarydata <- select(all_dat, ahiTotal, cesdTotal, sex, age, educ, income, occa
 ```
 
 Well done! You have started on your journey to become a confident and competent member of the open scientific community! To show us how competent you are you should now complete the assessment for this lab which follows the same instructions as this in-class activity but asks you to work with different variables. Always us the lab prep materials as well as what you do in class to help you complete the class assessments! Success through practice! 
+
+<!--chapter:end:02-lab02.Rmd-->
+
+
+# Lab 3
+
+Placeholder
+
+
+## Pre-class activity
+## In-class activity
+
+<!--chapter:end:03-lab03.Rmd-->
+
+
+# Lab 4 
+
+Placeholder
+
+
+## Pre-class activity
+## In-class activity
+### Getting our data ready to work with
+### We are now at the point where we can create a plot showing us some data. Why should we do this? This is an interesting thread from our colleagues Dr Guillaume Rousselet and Prof Lisa DeBruine on the reasons why we should use plots and the benefits of using ggplot, the package we will use today in RStudio, to create our plot: https://twitter.com/robustgar/status/1025342313004974080
+
+<!--chapter:end:04-lab04.Rmd-->
+
+
+# Lab 5
+
+Placeholder
+
+
+## Pre-class activity
+### Wrangling Data
+### The Autism Quotient (AQ)
+### Thinking through the problem
+## In class activity 
+### Making the computer do the dirty work
+
+<!--chapter:end:05-lab05.Rmd-->
+
+
+# Lab 6
+
+Placeholder
+
+
+## Inclass activity 
+### Task 1 - loading in the package 
+### Task 2 - read in data
+### Task 3 - getting our data into the correct format for analysis 
+### Task 4 - Question format
+### Task 5 - Scores
+### Task 6 - Calculate AQ scores
+### Task 7 - Calculate AQ scores cont'd
+### Task 8 - Calculate AQ scores efficiently
+### Task 9 - Using ggplot2, make a distribution of the overall AQ scores by producing a histogram from aq_scores.
+
+<!--chapter:end:06-lab06.Rmd-->
+
+
+# Lab 7
+
+Placeholder
+
+
+## Pre-class activity
+### Probability and Probability Distributions
+### Types of data
+### Simple probability calculations
+### Joint probability
+### Prep exercise: Estimate the probability of getting X heads over four independent flips.
+### Monte Carlo simulation
+### Theoretical probability distributions
+## Inclass activity
+### Monte Carlo simulations
+### The Binomial Distribution - Creating a Discrete Distribution
+
+<!--chapter:end:07-lab07.Rmd-->
+
+
+# Lab 8
+
+Placeholder
+
+
+## Pre-class activity
+### Discrete or Continuous Datasets
+#### <span style="color:DARKGREEN"> Quickfire Questions</span>
+### Normal distribution
+## Inclass activity
+### Normal Distribution Probability
+### Working with the Normal Distribution
+### `pnorm()` - the probability or distribution function
+### `qnorm()` - the quartile function
+
+<!--chapter:end:08-lab08.Rmd-->
+
+
+# (APPENDIX) Appendices {-} 
+
+<!--chapter:end:appendix-0.Rmd-->
+
