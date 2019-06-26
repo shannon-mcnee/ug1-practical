@@ -67,7 +67,7 @@ And as Grolemund and Wickham tells us
 'Visualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data. A good visualisation might also hint that you’re asking the wrong question, or you need to collect different data. Visualisations can surprise you, but don’t scale particularly well because they require a human to interpret them.` 
 http://r4ds.had.co.nz/introduction.html
 
-```{r, create plot}
+```{r, createplot, fig.cap='Happiness scores for participants aged less than 65 years'}
 ggplot(data = age_65max) + 
   geom_point(mapping = aes(x = ahiTotal , y = cesdTotal), col="purple") 
 ```
