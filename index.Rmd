@@ -1,5 +1,5 @@
 --- 
-title: "ug1-practical"
+title: "Level 1 Data Skills"
 author: "psyTeachR"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
