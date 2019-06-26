@@ -73,7 +73,6 @@ So lets start using some code to calculate the probabilities of people being a c
    taller than the average 16-24 y.o. Scotsman?
    
 ```{r P2_1}
-## NOTE: uncomment and replace NULL with your answer; do not change the name of the variable!
 p_taller_w <- pnorm(176.2, 163.8, 6.931, lower.tail = FALSE)
 ```
    
@@ -82,7 +81,6 @@ p_taller_w <- pnorm(176.2, 163.8, 6.931, lower.tail = FALSE)
    proportion of all 16-24 Scotsmen would she be willing to date?
    
 ```{r P2_2}
-## NOTE: uncomment and replace NULL with your answer; do not change the name of the variable!
 p_taller_m <- pnorm(181.12, 176.2, 6.748, lower.tail = FALSE)
 ```
 
@@ -91,7 +89,6 @@ p_taller_m <- pnorm(181.12, 176.2, 6.748, lower.tail = FALSE)
    Navy (at least 151.5\nbsp{}cm tall)?
    
 ```{r P2_3}
-## NOTE: uncomment and replace NULL with your answer; do not change the name of the variable!
 n_sailors <- 100000 * pnorm(151.5, 163.8, 6.931, lower.tail = FALSE)
 ```
 
@@ -104,6 +101,5 @@ Let's use our height example to work with qnorm:
    group?
 
 ```{r P2_4}
-## NOTE: uncomment and replace NULL with your answer; do not change the name of the variable!
 height_cutoff <- qnorm(.05, 176.2, 6.748, lower.tail = FALSE)
 ```

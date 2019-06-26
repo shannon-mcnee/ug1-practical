@@ -2,7 +2,7 @@
 --- 
 title: "ug1-practical"
 author: "psyTeachR"
-date: "2019-05-14"
+date: "2019-06-26"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -33,5 +33,6 @@ This resource outlines the structure and content of our level 1 practical course
 
 <div class="info">
 <p>We have not shared the assessments for the labs but they are closely related to the in-class activities so these can be used as assessment templates too with code remaining similar to in-class but data or variables of interest changing. Where we have had formative or optional tasks for students to complete these will be listed under post-lab activities.</p>
+<p>You may notice a progression between labs 1 to 4 and labs 5 to 8. This is due to labs 1 to 4 building on skills progressively with associated increase in assessment weighting whilst labs 5 to 8 have a more consistent yet higher weighting.</p>
 </div>
 
