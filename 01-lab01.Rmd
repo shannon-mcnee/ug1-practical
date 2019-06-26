@@ -1,10 +1,11 @@
-# Lab 1 
+# Lab 1: Reproducibility, open science, and the importance of data skills
 
 ```{block, type="info"}
 In this lab we will be introduced to the skills we will develop over the next year and beyond. This lab will introduce open science and why it is relevant to your development as a Psychologist. We will meet our groups and the staff that will be leading our labs and who we will get to know well over these two semesters. We can't wait to get started!
 ```
 
 ## Pre-class activity
+
 Watch this video of Dr Simine Vazire talking about open science and why it is an important concept for us to understand in Psychology.  
 <br>
 [Intro to open science](https://www.youtube.com/watch?v=1rFWeTryiW4&feature=youtu.be)
@@ -18,29 +19,35 @@ We want to give students more context about the importance of taking an open and
 
 In your groups please complete these steps on a bit of paper.
 
-*Draw a square
+* Draw a square
 
-*Draw another square at 15 degree angle to the bottom of the 1st square
+* Draw another square at 15 degree angle to the bottom of the 1st square
 
-*Draw 4 lines down from each corner of the 2nd square
+* Draw 4 lines down from each corner of the 2nd square
 
-*Draw a circle next to 2nd square
+* Draw a circle next to 2nd square
 
-*Draw a smaller circle on top of first circle 
+* Draw a smaller circle on top of first circle 
 
-*Draw upward line from side of 1st circle
+* Draw upward line from side of 1st circle
 
-*Draw 2 triangles on top of 2nd circle
+* Draw 2 triangles on top of 2nd circle
 
-Two examples of different interpretations of this task:
+After completing your drawing, click below to reveal two different interpretations of this task.
+
+`r hide("Click to reveal interpretations")`
 
 <img src="images/Holly_rep.jpg" width="300px" />
 
 <img src="images/Aliyah.jpg" width="300px" />
 
+`r unhide()`
+
 ### Activity 2: Getting to know the data
 
-This semester we will use the same dataset each week to develop our skills and knowledge. The dataset is from Woodworth et al. (2018) details of which can be found here [Web-based Positive Psychology Interventions: A Reexamination of Effectiveness](https://openpsychologydata.metajnl.com/articles/10.5334/jopd.35/).
+This semester we will use the same dataset each week to develop our skills and knowledge. The dataset is from:
+
+Woodworth, R.J., O'Brien-Malone, A., Diamond, M.R. and Schüz, B. (2018). [Data from, ‘Web-based Positive Psychology Interventions: A Reexamination of Effectiveness’](https://openpsychologydata.metajnl.com/articles/10.5334/jopd.35/). Journal of Open Psychology Data, 6(1), p.1. DOI: <http://doi.org/10.5334/jopd.35>
 
 Familiarise yourself with the data and the study it comes from. What are the variables? Can you think of a research question that you would be interested in answering with this data?
 
@@ -49,6 +56,7 @@ Familiarise yourself with the data and the study it comes from. What are the var
 ```
 
 ## Additional resources around open science and replicability
+
 [Is most published research wrong?](https://youtu.be/42QuXLucH3Q)
 
 [Replicability and Reproducibility Debate with Professor Dorothy Bishop](https://www.youtube.com/watch?v=UN8jgyXtz6A)
