@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ug1-practical</title>
+  <title>Level 1 Data Skills</title>
   <meta name="description" content="ug1-practical-materials">
   <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
-  <meta property="og:title" content="ug1-practical" />
+  <meta property="og:title" content="Level 1 Data Skills" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="ug1-practical" />
+  <meta name="twitter:title" content="Level 1 Data Skills" />
   
   <meta name="twitter:description" content="ug1-practical-materials" />
   
@@ -127,7 +127,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">ug1-practical</a></li>
+<li><a href="./">Level 1 Data Skills</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
@@ -254,7 +254,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ug1-practical</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Level 1 Data Skills</a>
           </h1>
         </div>
 
@@ -326,19 +326,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>What is the probability of meeting a 16-24 y.o. Scotswoman who is
 taller than the average 16-24 y.o. Scotsman?</li>
 </ol>
-<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb76-1" data-line-number="1">p_taller_w &lt;-<span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">176.2</span>, <span class="fl">163.8</span>, <span class="fl">6.931</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb72-1" data-line-number="1">p_taller_w &lt;-<span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">176.2</span>, <span class="fl">163.8</span>, <span class="fl">6.931</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li>Fiona is a very tall Scotswoman (181.12cm) in the 16-24
 y.o. range who refuses to date men who are shorter than her. What
 proportion of all 16-24 Scotsmen would she be willing to date?</li>
 </ol>
-<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb77-1" data-line-number="1">p_taller_m &lt;-<span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">181.12</span>, <span class="fl">176.2</span>, <span class="fl">6.748</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb73-1" data-line-number="1">p_taller_m &lt;-<span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">181.12</span>, <span class="fl">176.2</span>, <span class="fl">6.748</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 <ol start="3" style="list-style-type: decimal">
 <li>Out of 100,000 16-24 y.o. Scotswomen, how many would you predict
 would meet the height eligibility requirement to join the Royal
 Navy (at least 151.5cm tall)?</li>
 </ol>
-<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb78-1" data-line-number="1">n_sailors &lt;-<span class="st"> </span><span class="dv">100000</span> <span class="op">*</span><span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">151.5</span>, <span class="fl">163.8</span>, <span class="fl">6.931</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb74-1" data-line-number="1">n_sailors &lt;-<span class="st"> </span><span class="dv">100000</span> <span class="op">*</span><span class="st"> </span><span class="kw">pnorm</span>(<span class="fl">151.5</span>, <span class="fl">163.8</span>, <span class="fl">6.931</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 </div>
 <div id="qnorm---the-quartile-function" class="section level3">
 <h3><span class="header-section-number">8.2.4</span> <code>qnorm()</code> - the quartile function</h3>
@@ -348,7 +348,7 @@ Navy (at least 151.5cm tall)?</li>
 the top 5% of the height distribution for Scotsmen in his age
 group?</li>
 </ol>
-<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb79-1" data-line-number="1">height_cutoff &lt;-<span class="st"> </span><span class="kw">qnorm</span>(.<span class="dv">05</span>, <span class="fl">176.2</span>, <span class="fl">6.748</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb75-1" data-line-number="1">height_cutoff &lt;-<span class="st"> </span><span class="kw">qnorm</span>(.<span class="dv">05</span>, <span class="fl">176.2</span>, <span class="fl">6.748</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 
 </div>
 </div>

@@ -1,6 +1,6 @@
 
 --- 
-title: "ug1-practical"
+title: "Level 1 Data Skills"
 author: "psyTeachR"
 date: "2019-06-26"
 site: bookdown::bookdown_site
