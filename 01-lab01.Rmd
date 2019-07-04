@@ -1,17 +1,67 @@
-# Lab 1 
+---
+title: "01-lab01-Pre_Class-SM"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(webex)
+```
+
+# Lab 1
 
 ```{block, type="info"}
 In this lab we will be introduced to the skills we will develop over the next year and beyond. This lab will introduce open science and why it is relevant to your development as a Psychologist. We will meet our groups and the staff that will be leading our labs and who we will get to know well over these two semesters. We can't wait to get started!
 ```
 
 ## Pre-class activity
-Watch this video of Dr Simine Vazire talking about open science and why it is an important concept for us to understand in Psychology.  
-<br>
-[Intro to open science](https://www.youtube.com/watch?v=1rFWeTryiW4&feature=youtu.be)
 
-## In-class activities
-```{block, type="info"}
-We want to give students more context about the importance of taking an open and replicable position with their research so we provide a simple drawing task where each of them has to follow the instructions below. The output is varied as prevoius staff attempts show! This activity is included in lab 1 so students have not yet been introduced to R but rather are learning abdout the issues and current debates in the field. 
+### The Reproducibility Crisis 
+
+There is an ongoing debate within Psychology regarding whether the discipline is experiencing a **reproducibility crisis**. When we say **reproducibility** we mean the extent to which **consistent results** are obtained when we repeat an experiment under **comparable conditions**. So, when we say reproducibility **crisis** we mean that efforts to replicate past study findings often do not show the same results. For example, in 2015, a [team of researchers](https://www.nature.com/articles/s41562-018-0399-z) examined social science experiments published in the academic journals _Nature_ and _Science_ between 2010 and 2015. Out of 21 experiments, 13 were successfully replicated. 
+
+**Why is this happening?**
+
+When conducting research, you have to ask yourself a lot of questions: How many participants will I recruit? What variables am I interested in? What's the best way to analyse my data. This is called **researcher degrees of freedom**. This means researchers often have a lot of flexibility and can approach data in a "have a look" manner. Crucially, researcher degrees of freedom can lead to researchers using **questionable research practices** such as: 
+
+* Failing to report all of a study's dependent measures (e.g what you measure in the experiment)
+* Collecting more data after peeking at your results in order to make your results significant 
+* Failing to report all conditions in a study (e.g. Collecting data from three conditions - no/low/high anxiety - but only reporting two)
+* Stopping data collection earlier than planned because you found significant results 
+* Rounding off p-values to achieve significance (e.g. reporting p = 0.054 as p = 0.05) 
+* Only reporting studies that "worked"
+* HARKing - Hypothesising After Results Are Known (e.g. claiming you **predicted** these results before collecting data)
+
+In some cases, researchers have even been known to [falsify](https://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes) their data. 
+
+**Why should I care?**
+
+Science does not occur in a vacuum. Work that is published and disseminated then goes on to influence public knowledge (e.g. through reporting in the media) and the decisions our politicians make every day.  
+
+**What can be done about it?**
+
+During your time here at Glasgow, we will support you in developing skills and experience in **open science** practices. Open science practices are actions which aim to improve the **transparency**, **accessibility**, and **reproducibility** of scientific research. 
+
+Watch this [video](https://www.youtube.com/watch?v=1rFWeTryiW4&feature=youtu.be) of [Dr Simine Vazire](https://twitter.com/siminevazire?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) talking about open science and why it is an important concept for us to understand in Psychology.  
+
+## Additional resources around open science and reproducibility 
+
+[Is most published research wrong?](https://youtu.be/42QuXLucH3Q)
+
+[Replicability and Reproducibility Debate with Professor Dorothy Bishop](https://www.youtube.com/watch?v=UN8jgyXtz6A)
+
+[Why an Entire Field of Psychology Is in Trouble](https://youtu.be/2MDNvKXdLEM)
+
+[Beyond Cherry-picking](https://socialsciences.nature.com/users/200472-amy-orben/posts/42763-beyond-cherry-picking) by [Amy Orben](https://twitter.com/orbenamy?lang=en)
+
+******
+
+## In Class Activity
+
+```{block, type = "info"}
+
+Building upon what you have learned so far about reproducibility and open science, you will take part in a simple drawing task in groups - following the instructions below. We will then come back together as a class to discuss our attempts!
+
 ```
 
 ### Activity 1: Replication task  
@@ -32,25 +82,35 @@ In your groups please complete these steps on a bit of paper.
 
 *Draw 2 triangles on top of 2nd circle
 
-Two examples of different interpretations of this task:
+Once you have finished, hand in your attempt to the GTAs.
 
-<img src="images/Holly_rep.jpg" width="300px" />
+**Do you notice anything about how these instructions were understood across the class?**
 
-<img src="images/Aliyah.jpg" width="300px" />
-
-### Activity 2: Getting to know the data
+## Activity 2: Getting to know the data
 
 This semester we will use the same dataset each week to develop our skills and knowledge. The dataset is from Woodworth et al. (2018) details of which can be found here [Web-based Positive Psychology Interventions: A Reexamination of Effectiveness](https://openpsychologydata.metajnl.com/articles/10.5334/jopd.35/).
 
-Familiarise yourself with the data and the study it comes from. What are the variables? Can you think of a research question that you would be interested in answering with this data?
+Take some time now to read through the study and familiarise yourself with the data you will be using over the coming weeks.  
 
-```{block, type = "info"}
-**Post class activity** This is a formative task where the students have to familiarise themselves with the data and develop a research question relative to that data specifically whilst thinking through what they would need the data to look like before analysing. For example, they may look at the data and be interested in seeing there was an effect of intervention type on happiness score so, in their groups, they would start to think about how they could wrangle their data to make it suitable for an appropriate analysis. Our thinking behind this was that by understanding the problem students will understand the need for an effective tool to help them. Although RStudio has not been introduced to them yet, open science and replicability has. We are presenting the challenge of big, messy real data before we present the tool that can meet this challenge - R. 
-```
+******
 
-## Additional resources around open science and replicability
-[Is most published research wrong?](https://youtu.be/42QuXLucH3Q)
+**Pause and test your knowledge!**
 
-[Replicability and Reproducibility Debate with Professor Dorothy Bishop](https://www.youtube.com/watch?v=UN8jgyXtz6A)
+* How many questionnaire variables are in the dataset? 
 
-[Why an Entire Field of Psychology Is in Trouble](https://youtu.be/2MDNvKXdLEM)
+`r mcq(c(answer = "2", "4", "3"))`
+
+* What does the AHI measure? 
+
+`r fitb(c("Happiness", ignore_case = TRUE))` 
+
+* What does the CES-D measure? 
+
+`r fitb(c("Depression", ignore_case = TRUE))`
+
+******
+
+**In groups, have a think about what a possible research question might look like. How would you use this data? Would you be interested in studying any other variables alongside the data that you have?**
+
+
+
